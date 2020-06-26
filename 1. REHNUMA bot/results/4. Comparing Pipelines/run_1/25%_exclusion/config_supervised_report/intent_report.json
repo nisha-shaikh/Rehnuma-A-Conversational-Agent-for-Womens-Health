@@ -1,0 +1,494 @@
+{
+  "calcium_supplements": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "iron_why_deficient": 1
+    }
+  },
+  "labor_pain_medication": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "deny": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "folic_acid_not": 1,
+      "antenatal_visit_not_attend": 1
+    }
+  },
+  "antenatal_visit_when_start": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "folic_acid_check_doc": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "contractions": 1
+    }
+  },
+  "baby_due_date": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "antenatal_visit_necessary": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "antenatal_visit_what_happens": 1
+    }
+  },
+  "calcium_amount": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "signs_of_labor": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "active_labor": 2
+    }
+  },
+  "diet_what_to_eat": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "folate_food_items": 1
+    }
+  },
+  "baby_moves_start": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "baby_due_date": 1
+    }
+  },
+  "diet_why_change": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "folate_when_more": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "folate_food_items": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "baby_moves_monitor": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "premature_labor_symptoms": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "warning_signs_anterior_placental": 1
+    }
+  },
+  "calcium_foods": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "calcium_supplements": 1
+    }
+  },
+  "folate_benefits": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "folate_how_to_increase": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "iron_increase_tips": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "diet_what_to_eat": 1,
+      "iron_foods": 1
+    }
+  },
+  "active_labor": {
+    "precision": 0.4,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "signs_of_labor": 1
+    }
+  },
+  "folic_acid_take_time": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "folic_acid_dose": 1
+    }
+  },
+  "baby_growth": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "folic_acid_dose": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "labor_pain_drug_free": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "glossary": 1
+    }
+  },
+  "mood_unhappy": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "warning_signs_anterior_placental": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "delivery": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "folic_acid_food": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "warning_signs": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "warning_signs_howto_deal": 2
+    }
+  },
+  "baby_moves_feel": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "baby_moves_monitor": 1,
+      "signs_of_labor": 1,
+      "pregnancy_confirm": 1
+    }
+  },
+  "antenatal_visit_frequency": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "folic_acid_not": 1
+    }
+  },
+  "mood_great": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "mood_unhappy": 2
+    }
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {
+      "home_pregnancy_test_accuracy": 1
+    }
+  },
+  "premature_labor": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "pregnancy_test_internal_exam": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "antenatal_visit_not_attend": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "antenatal_visit_what_happens": 1,
+      "antenatal_visit_when_start": 1
+    }
+  },
+  "home_pregnancy_test_accuracy": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "pregnancy_test": 1,
+      "blood_pregnancy_test": 1
+    }
+  },
+  "pregnancy_test": {
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {}
+  },
+  "iron_foods": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "folate_food_items": 1,
+      "iron_increase_tips": 1
+    }
+  },
+  "antenatal_visit_info_first_time": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "blood_pregnancy_test": {
+    "precision": 0.75,
+    "recall": 1.0,
+    "f1-score": 0.8571428571428571,
+    "support": 3,
+    "confused_with": {}
+  },
+  "pregnancy_confirm": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "pregnancy_test": 1
+    }
+  },
+  "glossary": {
+    "precision": 0.875,
+    "recall": 0.7777777777777778,
+    "f1-score": 0.823529411764706,
+    "support": 9,
+    "confused_with": {
+      "delivery": 1,
+      "antenatal_visit_what_happens": 1
+    }
+  },
+  "iron_why_deficient": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "iron_increase_tips": 2
+    }
+  },
+  "antenatal_visit_attendant": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "castor_oil_labor": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "labor_expectation": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "active_labor": 1
+    }
+  },
+  "contractions": {
+    "precision": 0.6666666666666666,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.6666666666666666,
+    "support": 3,
+    "confused_with": {
+      "folic_acid_start_time": 1
+    }
+  },
+  "greet": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "folic_acid_not": 1
+    }
+  },
+  "warning_signs_howto_deal": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "baby_moves_monitor": 1
+    }
+  },
+  "calcium_side_effects": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 2,
+    "confused_with": {
+      "calcium_amount": 1
+    }
+  },
+  "folic_acid_start_time": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1-score": 0.5,
+    "support": 2,
+    "confused_with": {
+      "antenatal_visit_what_happens": 1
+    }
+  },
+  "antenatal_visit_attendee": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "folic_acid_not": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "folate_benefits": 1,
+      "calcium_foods": 1
+    }
+  },
+  "baby_moves_not": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "baby_moves_start": 1
+    }
+  },
+  "antenatal_visit_what_happens": {
+    "precision": 0.2,
+    "recall": 0.5,
+    "f1-score": 0.28571428571428575,
+    "support": 2,
+    "confused_with": {
+      "diet_what_to_eat": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.6617647058823529,
+    "recall": 0.6617647058823529,
+    "f1-score": 0.6617647058823529,
+    "support": 136
+  },
+  "macro avg": {
+    "precision": 0.6150584795321639,
+    "recall": 0.6276803118908382,
+    "f1-score": 0.5959015185021376,
+    "support": 136
+  },
+  "weighted avg": {
+    "precision": 0.6572916666666666,
+    "recall": 0.6617647058823529,
+    "f1-score": 0.6371663371230846,
+    "support": 136
+  }
+}

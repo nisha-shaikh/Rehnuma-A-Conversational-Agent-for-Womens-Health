@@ -1,0 +1,407 @@
+[
+  {
+    "text": "Who is a Obstetric anesthetists",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "Obstetric anesthetists",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Obstetric anesthetists",
+        "start": 19,
+        "end": 31,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What is Neural tube defect",
+    "entities": [
+      {
+        "start": 8,
+        "end": 26,
+        "value": "Neural tube defect",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "The neural tube",
+        "start": 8,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What is the meaning of anesthesia",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "the meaning of anesthesia",
+        "start": 8,
+        "end": 33,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "yes",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "yes",
+        "start": 0,
+        "end": 3,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Will bringing a friend to the visits be fine?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "friend",
+        "entity": "attendee"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "visits",
+        "start": 30,
+        "end": 36,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Ideal number of visits when pregnant.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "of visits",
+        "start": 13,
+        "end": 22,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "First Antenatal Visit.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": ".",
+        "start": 21,
+        "end": 22,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Antenatal care's advantage",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 0,
+        "end": 14,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "visit_type",
+        "value": "'s advantage",
+        "start": 14,
+        "end": 26,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Two months pregnant. Tell me how grown my baby is.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Two months",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "9",
+        "start": 0,
+        "end": 10,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "word",
+        "value": ".",
+        "start": 49,
+        "end": 50,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Describe baby's motion inside my stomach",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "stomach",
+        "start": 33,
+        "end": 40,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Does taking in excessive amount of calcium have negative effects on my health?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "excessive",
+        "start": 15,
+        "end": 24,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Will the doctor perform a blood test to check if I am pregnant?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "Will the doctor",
+        "start": 0,
+        "end": 15,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Apart from blood and urine test, what is the other way to doctors use to confirm if a women is expecting?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "women",
+        "start": 86,
+        "end": 91,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the recommended dose of folic acid",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "the",
+        "start": 8,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Are egg noodles a source of folic acid?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "egg",
+        "start": 4,
+        "end": 7,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is spina bifida?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "spina bifida",
+        "start": 8,
+        "end": 20,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Can I take folic acid with prenatal vitamins?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "prenatal vitamins",
+        "start": 27,
+        "end": 44,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Effect of folic acid on early delivery",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "early delivery",
+        "start": 24,
+        "end": 38,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What are some warning signs that should be reported immediately during pregnancy?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "be reported immediately",
+        "start": 40,
+        "end": 63,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is Lamaze?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Lamaze?",
+        "start": 8,
+        "end": 15,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Are there any herbal methods to reduce labour pain?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "herbal",
+        "start": 14,
+        "end": 20,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Are their medicines to stop labor?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "medicines",
+        "start": 10,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "False alarm",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "False alarm",
+        "start": 0,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  }
+]

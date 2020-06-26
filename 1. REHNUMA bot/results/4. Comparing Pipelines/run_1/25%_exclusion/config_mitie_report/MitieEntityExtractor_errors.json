@@ -1,0 +1,384 @@
+[
+  {
+    "text": "What is the meaning of anesthesia",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "of anesthesia",
+        "start": 20,
+        "end": 33,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is Neural tube defect",
+    "entities": [
+      {
+        "start": 8,
+        "end": 26,
+        "value": "Neural tube defect",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Neural",
+        "start": 8,
+        "end": 14,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hello",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "hello",
+        "start": 0,
+        "end": 5,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "very sad",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "sad",
+        "start": 5,
+        "end": 8,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My attendant during appointments?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "My",
+        "start": 0,
+        "end": 2,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "May I bring along a family member to the visits?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 33,
+        "value": "family member",
+        "entity": "attendee"
+      },
+      {
+        "start": 41,
+        "end": 47,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "visits",
+        "start": 41,
+        "end": 47,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the recommended no. of visits for me?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 37,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "the",
+        "start": 8,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "visits",
+        "start": 31,
+        "end": 37,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What happens in the first hospital visit?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "hospital visit",
+        "start": 26,
+        "end": 40,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What if i can't attend antenatal clinic?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 39,
+        "value": "antenatal clinic",
+        "entity": "care_from_where"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "antenatal clinic",
+        "start": 23,
+        "end": 39,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I am a working woman. I cannot take time for antenatal care",
+    "entities": [
+      {
+        "start": 45,
+        "end": 59,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "working woman",
+        "start": 7,
+        "end": 20,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 45,
+        "end": 59,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What will the doctor visits include?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "visits",
+        "start": 21,
+        "end": 27,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Due Date Calculator",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Date Calculator",
+        "start": 4,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My pregnancy has been six months old. Update me on my baby's growth.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": "six months old",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "been six months",
+        "start": 17,
+        "end": 32,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I am pregnant and have calcium deficiency. Suggest me in what vegetables I can find them.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "Suggest me",
+        "start": 43,
+        "end": 53,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What tests are available in the market to be sure that you are pregnant?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "market",
+        "start": 32,
+        "end": 38,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "How can consulting a doctor for medication help?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "doctor for medication",
+        "start": 21,
+        "end": 42,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the recommended dose of folic acid",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "the",
+        "start": 8,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Are there any herbal methods to reduce labour pain?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "herbal",
+        "start": 14,
+        "end": 20,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is Lamaze?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Lamaze",
+        "start": 8,
+        "end": 14,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the difference between anesthetics and Analgesics?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "anesthetics and",
+        "start": 31,
+        "end": 46,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "False alarm",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "False alarm",
+        "start": 0,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  }
+]

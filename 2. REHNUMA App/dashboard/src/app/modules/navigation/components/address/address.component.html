@@ -1,0 +1,131 @@
+<!-- <div class="container">
+  <h2>To do</h2>
+
+  <div cdkDropList #todoList="cdkDropList" [cdkDropListData]="todo"
+      [cdkDropListConnectedTo]="doneList" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Done</h2>
+
+  <div cdkDropList #doneList="cdkDropList" [cdkDropListData]="done"
+      [cdkDropListConnectedTo]="todoList" class="list" (cdkDropListDropped)="drop($event)">
+    <div class="list-item" *ngFor="let item of done" cdkDrag>{{item}}</div>
+  </div>
+</div> -->
+<div class="card">
+	<!-- <div class="card-header">
+		<h4 class="card-title">History</h4>
+		<p class="card-category">Category subtitle</p>
+	</div> -->
+	<div class="card-body">
+		<div>
+			<form>
+				<div class="form-group form-inline">
+					Full text search: <input class="form-control ml-2" type="text" [formControl]="filter" [(ngModel)]="searchText"/>
+				</div>
+			</form>
+			<table class="table table-striped">
+				<thead>
+					<th scope="col">Visitor ID</th>
+					<th scope="col">Last Message</th>
+					<th scope="col">Flagged</th>
+					<th scope="col">Rating</th>
+					<th scope="col">Time</th>
+					<th scope="col"> </th>
+				</thead>
+				<tbody>
+					<tr scope="row" *ngFor='let chat of chat$ | async | filter:searchText | paginate: {itemsPerPage: 10, currentPage: p}'>
+					<td>
+						<ngb-highlight [result]="chat.id" [term]="filter.value"></ngb-highlight>
+					</td>
+					<td>
+						<!-- Bye. -->
+						<ngb-highlight [result]="'Bye.'" [term]="filter.value"></ngb-highlight>
+					</td>
+					<td>
+						<ngb-highlight [result]="chat.Flagged" [term]="filter.value"></ngb-highlight>
+					</td>
+					<td>
+						<ngb-highlight [result]="chat.Rating | number" [term]="filter.value"></ngb-highlight>
+					</td>
+					<td>
+						<ngb-highlight [result]="chat.StartTime.toDate() | date: 'dd MMM yyyy hh:mm a'" [term]="filter.value"></ngb-highlight>
+					</td>
+					<td><button type="button" class="btn btn-secondary" (click)="onSelect(chat, longContent)" data-toggle="modal" data-target="#myModal">View</button></td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<div class="d-flex justify-content-between p-2">
+				<pagination-controls (pageChange)="p = $event"></pagination-controls>
+				<!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+				</ngb-pagination>
+			  
+				<select class="custom-select" style="width: auto" [(ngModel)]="pageSize">
+				  <option [ngValue]="10">10 items per page</option>
+				  <option [ngValue]="20">20 items per page</option>
+				  <option [ngValue]="30">30 items per page</option>
+				</select> -->
+			</div>
+	  	</div>
+	</div>
+  </div>
+  <div class="chat-preview">
+	<ng-template #longContent let-modal>
+	  <div class="modal-header">
+		<!-- <h4 class="modal-title" id="modal-basic-title">Chat with {{selectedChat.id}}</h4> -->
+		<button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+		  <span aria-hidden="true">&times;</span>
+		</button>
+	  </div>
+	  <div class="modal-body">
+		<div *ngIf="selectedChat">
+		  <div class="frame col-sm-offset-4">
+			<ul>
+			  <div *ngFor='let message of message$ | async'>
+				<li style="width:100%">
+				  <div class="msj macro">
+					<div class="text text-l">
+						<p>User: {{message.MessageText}}</p>
+						<p><small>{{message.Time.toDate() | date: 'dd MMM yyyy hh:mm a'}}</small></p>
+					  </div>
+				  </div>
+				</li>
+				<li style="width:100%">
+				  <div class="msj-rta macro">
+					<div class="text text-r">
+						<p>Bot: {{message.Response.ResponseText}}</p>
+						<p><small>{{message.Time.toDate() | date: 'dd MMM yyyy hh:mm a'}}</small></p>
+					  </div>
+				  </div>
+				</li>
+			  </div>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	  <div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Done</button>
+	  </div>
+	</ng-template>
+  </div>
+  
+  <!-- <div>
+	<ul>
+	  <li *ngFor='let chat of chat$ | async' (click)="onSelect(chat)">
+		{{chat.id}}
+	  </li>
+	</ul>
+  </div>
+  <div *ngIf="selectedChat"> -->
+  
+	<!-- <h2>{{selectedChat.id}} Details</h2>
+	<div *ngFor='let message of message$ | async'>
+	  <p>{{message.Time.toDate() | date: 'dd MMM yyyy hh:mm a'}} User: {{message.MessageText}}</p>
+	  <p>{{message.Time.toDate() | date: 'dd MMM yyyy hh:mm a'}} Bot: {{message.Response.ResponseText}}</p>
+	</div>
+  
+  </div> -->

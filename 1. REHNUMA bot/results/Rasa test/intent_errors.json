@@ -1,0 +1,10 @@
+[
+  {
+    "text": "I can't get enough iron from my diet.",
+    "intent": "iron_increase_tips",
+    "intent_prediction": {
+      "name": "iron_why_deficient",
+      "confidence": 0.4835733473300934
+    }
+  }
+]

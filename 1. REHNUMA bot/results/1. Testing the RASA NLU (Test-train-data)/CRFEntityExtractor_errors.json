@@ -1,0 +1,14 @@
+[
+  {
+    "text": "What is Intrauterine growth restriction (IUGR)",
+    "entities": [
+      {
+        "start": 8,
+        "end": 46,
+        "value": "Intrauterine growth restriction (IUGR)",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

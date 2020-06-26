@@ -1,0 +1,537 @@
+actions: 
+  # TOTAL: 75
+  # CUSTOM - 03
+  - action_baby_growth
+  - action_get_glossary
+  - action_important_nutrients
+  # GENERAL - 06
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  # FALLBACK
+  - utter_ask_rephrase
+  - utter_default
+  # FOR CONVERSATIONAL FLOW/ EMPATHY -10
+  - utter_ask_first
+  - utter_thank
+  - utter_help_offer
+  - utter_more
+  - utter_performance
+  - utter_glad_bye
+  - utter_sad_bye
+  - utter_dont_worry
+  - utter_ok
+  - utter_on_it
+  # ANTENATAL CARE - 08
+  - utter_antenatal_visit_attendant_1
+  - utter_antenatal_visit_attendant_2
+  - utter_antenatal_visit_attendant_3
+  - utter_antenatal_visit_attendant_4
+  - utter_antenatal_visit_attendee
+  - utter_antenatal_visit_frequency_1
+  - utter_antenatal_visit_frequency_2
+  - utter_antenatal_visit_frequency_3
+  - utter_antenatal_visit_info_first_time
+  - utter_antenatal_visit_necessary
+  - utter_antenatal_visit_not_attend
+  - utter_antenatal_visit_what_happens_1
+  - utter_antenatal_visit_what_happens_2
+  - utter_antenatal_visit_what_happens_3
+  - utter_antenatal_visit_when_start
+  # BABY MOTIONS - 05
+  - utter_baby_due_date
+  - utter_baby_moves_feel
+  - utter_baby_moves_monitor
+  - utter_baby_moves_not
+  - utter_baby_moves_start
+  # PREGNANCY TESTS - 06
+  - utter_blood_pregnancy_test
+  - utter_home_pregnancy_test_accuracy
+  - utter_home_pregnancy_test_how_1                     
+  - utter_home_pregnancy_test_how_2
+  - utter_pregnancy_confirm
+  - utter_pregnancy_test
+  - utter_pregnancy_test_internal_exam
+  # DIET - 02
+  - utter_diet_what_to_eat
+  - utter_diet_why_change
+  # CALCIUM - 04
+  - utter_calcium_amount
+  - utter_calcium_foods
+  - utter_calcium_side_effects
+  - utter_calcium_supplements
+  # FOLATE - 10
+  - utter_folate_benefits
+  - utter_folate_food_items
+  - utter_folate_how_to_increase
+  - utter_folate_when_more
+  - utter_folic_acid_check_doc
+  - utter_folic_acid_dose
+  - utter_folic_acid_food
+  - utter_folic_acid_not
+  - utter_folic_acid_start_time
+  - utter_folic_acid_take_time
+  # IRON - 06
+  - utter_iron_foods
+  - utter_iron_increase_tips
+  - utter_iron_supplements_side_effects
+  - utter_iron_supplements_twins
+  - utter_iron_why_deficient
+  # WARNING SIGNS - 03
+  - utter_warning_signs
+  - utter_warning_signs_anterior_placental
+  - utter_warning_signs_howto_deal
+  # DELIVERY AND LABOR -13
+  - utter_delivery
+  - utter_signs_of_labor
+  - utter_labor_expectation
+  - utter_labor_pain_drug_free_1
+  - utter_labor_pain_drug_free_2
+  - utter_labor_pain_drug_free_3
+  - utter_labor_pain_medication
+  - utter_premature_labor_symptoms
+  - utter_premature_labor_risk_0              
+  - utter_premature_labor_risk_1
+  - utter_premature_labor_risk_2
+  - utter_premature_labor_risk_3
+  - utter_premature_labor_risk_4
+  - utter_premature_labor_risk_5
+  - utter_premature_labor_risk_6
+  - utter_premature_labor_risk_7
+  - utter_premature_labor_risk_8
+  - utter_premature_labor_risk_9
+  - utter_premature_labor
+  - utter_castor_oil_labor
+  - utter_labor_feels
+  - utter_active_labor_1
+  - utter_active_labor_2
+  - utter_active_labor_3
+  - utter_contractions_1
+  - utter_contractions_2
+  - utter_contractions_3
+
+  
+entities:
+  - food
+  - visit_type
+  - attendee
+  - drink
+  - care_from_where
+  - pregnancy_duration
+  - word
+  
+intents: 
+  # CUSTOM 
+  - glossary
+  #FALLBACK
+  - out_of_scope
+  # GENERAL
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  # FOR EMPATHY
+  - more 
+  - thank
+  - ok 
+  # ANTENATAL
+  - antenatal_visit_attendant
+  - antenatal_visit_attendee
+  - antenatal_visit_frequency
+  - antenatal_visit_info_first_time
+  - antenatal_visit_necessary
+  - antenatal_visit_not_attend
+  - antenatal_visit_what_happens
+  - antenatal_visit_when_start
+  # BABY MOTIONS
+  - baby_due_date
+  - baby_growth
+  - baby_moves_feel
+  - baby_moves_monitor
+  - baby_moves_not
+  - baby_moves_start
+  # PREGNANCY TESTS
+  - blood_pregnancy_test
+  - home_pregnancy_test_accuracy
+  - home_pregnancy_test_how
+  - pregnancy_confirm
+  - pregnancy_test
+  - pregnancy_test_internal_exam
+  # DIET
+  - diet_what_to_eat
+  - diet_why_change
+  # CALCIUM
+  - calcium_amount
+  - calcium_foods
+  - calcium_side_effects
+  - calcium_supplements
+  # FOLATE
+  - folate_benefits
+  - folate_food_items
+  - folate_how_to_increase
+  - folate_when_more
+  - folic_acid_check_doc
+  - folic_acid_dose
+  - folic_acid_food
+  - folic_acid_not
+  - folic_acid_start_time
+  - folic_acid_take_time
+  # NUTRIENTS
+  - important_nutrients
+  # IRON
+  - iron_foods
+  - iron_increase_tips
+  - iron_supplements_side_effects
+  - iron_supplements_twins
+  - iron_why_deficient
+  # WARNING SIGNS
+  - warning_signs
+  - warning_signs_anterior_placental
+  - warning_signs_howto_deal
+  # DELIVERY AND LABOR
+  - delivery
+  - signs_of_labor
+  - labor_expectation
+  - labor_pain_drug_free
+  - labor_pain_medication
+  - premature_labor_symptoms
+  - premature_labor_risk
+  - premature_labor
+  - castor_oil_labor
+  - labor_feels
+  - active_labor
+  - contractions
+   
+  
+  
+responses:
+  
+        #GENERAL
+  utter_cheer_up: 
+    - 
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+      text: "Here is something to cheer you up:"
+  utter_did_that_help: 
+    - 
+      text: "Did that help you?"
+  utter_goodbye: 
+    - 
+      text: Bye
+  utter_greet: 
+    - 
+      text: "Hey! How are you?"
+  utter_happy: 
+    - 
+      text: "Great, carry on!"
+  utter_iamabot: 
+    - 
+      text: "I am a bot, powered by Rasa."
+
+    # FALLBACK
+  utter_ask_rephrase:
+    - 
+      text: "Sorry, I couldn't quite understand what you said. Maybe you can help me by rephrasing what you said."
+  utter_default:
+    -
+      text: "I am sorry. What you are trying to ask of me is not in my knowledge? But I can tell you a list of topics you can ask me about like pregnancy tests, antenatal care, baby's growth or motion, your diet, warning signs, delivery or labor. You can also choose to leave this conversation. All of you have to say is \"Bye\""
+        #ANTENATAL CARE
+  utter_antenatal_visit_attendant_1: 
+    - 
+      text: "You may want to see your own GP first, before choosing a midwife. It's up to you. It can also depend on whether you're planning to give birth at a public hospital. If so, it's likely that you will see a doctor or midwife at the hospital."
+  utter_antenatal_visit_attendant_2:
+    -
+      text: "If you're planning to give birth at a birth centre, you will probably have your appointments with the midwife at the birth centre."
+  utter_antenatal_visit_attendant_3:
+    -
+      text: "If you intend to have your baby at a private hospital, your appointments will most likely be with your obstetrician in their rooms."
+  utter_antenatal_visit_attendant_4:
+    -
+      text: "If you're planning to have a home birth, your antenatal care will probably be provided by a midwife in your home, the hospital or elsewhere in the community."
+  utter_antenatal_visit_attendee: 
+    - 
+      text: "It's a good idea for your birth support partner, family member or friend to come to your appointments with you, particularly when discussing your birth plan and if you want them to support you during the birth."
+  utter_antenatal_visit_frequency_1: 
+    - 
+      text: "If this is your first pregnancy and you're not experiencing any problems, it's likely you'll have about 8 to 10 appointments. Your GP or midwife will give you an appointment plan during your first antenatal visit."
+  utter_antenatal_visit_frequency_2:
+    -
+      text: "If this is not your first pregnancy, you'll probably have 7-9 appointments if you had an uncomplicated pregnancy before."
+  utter_antenatal_visit_frequency_3:
+    -
+      text: "The number of visits can change depending on whether your pregnancy becomes complicated. If it does, your midwife or doctor may need to increase the number of appointments and you may need more tests and scans. You can also organise to see your doctor or midwife if you have any problems or concerns."
+  utter_antenatal_visit_info_first_time: 
+    - 
+      text: "Your first visit is to enable you book in the antenatal clinic. It provides your midwife with valuable background information about you, and the midwife will book you in for maternity care provided by your health centre or hospital. If you decide later in pregnancy that you want to give birth at a different hospital, you can discuss with your health provider."
+  utter_antenatal_visit_necessary: 
+    - 
+      text: "For most women, pregnancy is a straightforward, happy and healthy time. Having regular antenatal check-ups is an important part of staying healthy and making sure your baby is healthy. Regular checks during your pregnancy can assist in identifying and reducing risks to either you or your baby. Although you may be feeling well, it is still important to go to all your antenatal check-ups. Antenatal visits also give you a chance to ask any questions and to talk about any issues that you are unsure about, such as aches and pains, the birth, feeding your baby or any other concerns. Before each visit, it is a good idea to think about the things you want to talk about and then write them down so that you don't forget them."
+  utter_antenatal_visit_not_attend: 
+    - 
+      text: "Your wellbeing and that of the unborn baby is very important, you need to schedule your work activities to attend antenatal clinic, a minimum of four (4) visits is required. If you don't think you can keep your appointment, call the clinic and let them know. Ask to speak to a nurse and explain why you can't keep the scheduled appointment. They can try to help you re-schedule your appointment."
+  utter_antenatal_visit_what_happens_1: 
+    - 
+      text: "During the first antenatal visit, you can expect your doctor to, (Ask about your health history including diseases, operations, or previous pregnancies, Ask about your family's health history, Do a complete physical exam, including a pelvic exam, Take your blood and urine for lab tests, Check your blood pressure, height, and weight, Calculate your due date, Answer your questions."
+  utter_antenatal_visit_what_happens_2: 
+    -
+      text: "At the first visit, you should ask questions and discuss any issues related to your pregnancy. Find out all you can about how to stay healthy. Later antenatal visits will probably be shorter. Your doctor will check on your health and make sure the baby is growing as expected."
+  utter_antenatal_visit_what_happens_3:
+    -
+      text: "Most antenatal visits will include, Checking your blood pressure, Measuring your weight gain, Measuring your abdomen to check your baby's growth, Checking the baby's heart rate. While you're pregnant, you also will have some routine tests. Some tests are suggested for all women, such as blood test to check for anaemia, your blood group &genotype, HIV, and other factors. Other tests might be offered based on your age, personal or family health history, your ethnic background, or the results of routine tests you have had."
+  utter_antenatal_visit_when_start: 
+    - 
+      text: "It is a good idea to go to your own doctor (GP) as soon as you think you may be pregnant. At this visit, you and your GP can discuss what type of care you would like to have, and when and where you should have your next visit. Your GP will also be able to arrange for some tests (blood tests, scans) that can be done before your first antenatal visit."
+  
+        #BABY MOVEMENTS
+  utter_baby_due_date: 
+    - 
+      text: "Once you know you are pregnant, your doctor or midwife will help you work out when your baby is due (the 'estimated date of confinement' or EDC). This is done by adding 40 weeks to the date of the beginning of your last period. Once your pregnancy is confirmed, you should start thinking about the type of care you want throughout your pregnancy and the birth. If you are in the workforce this is also the time to find out about your rights at work and about maternity leave."
+  utter_baby_moves_feel: 
+    - 
+      text: "Pregnant women describe their baby's movements as butterflies, nervous twitches, or a tumbling motion. At first, it may be hard to tell whether your baby has moved. By your second and third trimesters, the movements should be more distinct, and you'll be able to feel your baby's kicks, jabs, and elbows."
+  utter_baby_moves_monitor: 
+    - 
+      text: "Once your baby's movements are well established (usually by week 28), some doctors recommend keeping track of all those little punches, jabs, and kicks to make sure your baby is still developing normally. There isn't any real scientific evidence to prove whether this method is a good indicator of the baby's well-being, so check with your doctor to see what he recommends."
+  utter_baby_moves_not: 
+    - 
+      text: "If your baby has started to move regularly and you don't feel at least 10 movements within a two-hour period, or the movements have slowed significantly, it's time to call your doctor."
+  utter_baby_moves_start: 
+    - 
+      text: "You should feel your baby's first movements, called quickening, between weeks 16 and 25 of your pregnancy. If this is your first pregnancy, you may not feel your baby move until closer to 25 weeks. By the second pregnancy, some women start to feel movements as early as 13 weeks. You're more likely to feel baby move when you're in a quiet position, either sitting or lying down."
+        
+        # CALCIUM
+  utter_calcium_amount: 
+    - 
+      text: "Your body can't make calcium, so you need to get it from food or supplements. While you're pregnant, try to get at least 1,000 mg of calcium every day. If you're 18 or younger, then you need at least 1,300 mg of calcium every day."
+  utter_calcium_foods: 
+    - 
+      text: "Dairy foods such as milk, cheese, and yogurt are some of the best sources of calcium. Dark, leafy green vegetables also have calcium but in much smaller amounts. Some foods have calcium added to them, including calcium-fortified cereal, bread, orange juice, and soy drinks. Check food labels to know for sure."
+  utter_calcium_side_effects: 
+    - 
+      text: "Supplements may make you feel bloated, gassy, or constipated. If they do, try taking the calcium supplement with food. Or talk with your doctor about taking a different type or brand of calcium supplement. Too much calcium may cause kidney stones and prevent your body from absorbing zinc and iron, which you need to stay healthy. Don't take more than 2,500 mg of calcium each day (3,000 mg if you're 18 or younger) while pregnant."
+  utter_calcium_supplements: 
+    - 
+      text: "Calcium supplements come in two forms: carbonate and citrate. Many calcium supplements also contain vitamin D, which helps your body absorb calcium. To make sure your body absorbs the most calcium possible, take only 500 mg of calcium at a time. Calcium citrate works just as well with food or on an empty stomach. Moreover, calcium carbonate is less expensive and works best if you take it with food."
+  
+        # PREGNANCY TESTS
+  utter_blood_pregnancy_test: 
+    - 
+      text: "A blood test will give you a reliable result, even at the earliest stage of pregnancy. Your doctor will order the test, which will check for the human chorionic gonadotrophin hormone in your blood. You can have this test done as soon as you have missed your period."
+  utter_home_pregnancy_test_accuracy: 
+    - 
+      text: "With home pregnancy tests: *Make sure you follow the instructions on the test very carefully to get the most accurate result. *Wait until at least a week after your expected period before testing to get the most reliable result. *If you are taking fertility drugs or you are an older woman, you may get a false result. *If you use a home pregnancy kit, always see a doctor to confirm the pregnancy."
+  utter_home_pregnancy_test_how_1: 
+    - 
+      text: "There are different types. Read the instructions carefully before doing a home pregnancy test. It is best to collect the urine sample first thing in the morning, before you have drunk a lot of fluid, or there might not be enough hCG to give a positive result." 
+  utter_home_pregnancy_test_how_2:
+    -
+      text: "With most home kits, you either hold the end of a chemical dipstick in your urine stream or collect the urine in a container and test it. The dipstick tests for hCG and uses colours or symbols to show whether or not you are pregnant. Digital dipsticks may state ‘pregnant’ or ‘not pregnant’ and can be easier to read. Some digital kits are more accurate than traditional test kits."
+  utter_pregnancy_confirm: 
+    - 
+      text: "If you suspect you are pregnant, there are home pregnancy tests that can be bought over the counter to check your human chorionic gonadotrophin (hCG) levels which may indicate you are pregnant. It is always important to see your doctor to confirm whether you're pregnant, work out your due date and what foods you should be eating."
+  utter_pregnancy_test: 
+    - 
+      text: "You can buy home pregnancy urine testing kits from your local pharmacy. You can also have a urine test done at a hospital clinic by your doctor, or at a family planning clinic. Another more reliable option is blood test, which will be prescribed by a doctor. The doctor can also confirm your pregnancy through internal examination."
+  utter_pregnancy_test_internal_exam: 
+    - 
+      text: "At least 2 weeks after your missed period, your doctor may examine you internally to check for changes in your uterus and cervix (the lowest part of your uterus). When you are pregnant, your doctor will be able to tell that your cervix has changed colour and is softer. Your uterus is already getting bigger in the first few weeks of pregnancy. Most doctors will still do a blood or urine test to confirm your pregnancy."
+      
+
+  # FOR CONVERSATIONAL FLOW/ EMPATHY
+  utter_ask_first:
+    -
+      text: "Is this your first time?"
+  utter_thank:
+    -
+       text: "You're welcome! Is there anything else I can help you with?"
+  utter_help_offer:
+    -
+       text: "How can I help you?"
+  utter_more:
+    -
+        text: "What more would you like to know?"
+  utter_performance:
+    -
+        text: "Was Rehnuma able to assist with your concerns?"
+  utter_glad_bye:
+    -
+        text: "Glad to know that. Bye!"
+  utter_sad_bye:
+    -
+        text: "Rehuma is trying the best to help you out. Try asking another question or please write to us on feedback@rehnuma.com to help us improve."
+  utter_dont_worry:
+    -
+      text: "Don't worry, you got this! Good Luck!"
+  utter_ok:
+    -
+      text: "Anything else I can help with?"
+  utter_on_it:
+    -
+      text: "I am on it."
+
+  # DIET
+  utter_diet_what_to_eat: 
+    - 
+      text: "The following types of food are very important during pregnancy: * Grains - Bread, wheat, oatmeal, cereal, etc. * Fruits - Fruits should be eaten mostly fresh. * Juice that is 100% fruit juice is also helpful. * Vegetables. Protein foods - meat, poultry, seafood, beans and peas, eggs, processed soy products, nuts, and seeds. * Dairy - Milk and products made from milk."
+  utter_diet_why_change: 
+    - 
+      text: "A balanced diet should supply all of the vitamins and minerals and essentials nutrients needed for healthy growth and development of the organs and tissues of the fetus, and prevent major birth defects of the baby's brain and spine."
+  
+  #FOLATE
+  utter_folate_benefits: 
+    - 
+      text: "Folate is a B group vitamin that helps prevent birth defects known as neural tube defects, such as spina bifida. Folic acid is changed into folate in the body. Women who are planning a pregnancy are advised to take extra folic acid for at least one month before pregnancy, and then for the first three months of the pregnancy."
+  utter_folate_food_items: 
+    - 
+      text: "The foods that have the most folate include: * green leafy vegetables such as broccoli, spinich, salad greens * chickpeas * nuts * orange juice * some fruits * dried beans and peas. You will also find that many types of bread, breakfast cereals and other packaged foods contain added folate. These are called folate-fortified foods. Heating can destroy folate. If you are cooking any folate-rich vegetables it is best to microwave, stir-fry or steam them. Do not use any bicarbonate of soda when you are cooking folate-rich foods such as dried chickpeas or soybeans."
+  utter_folate_how_to_increase: 
+    - 
+      text: "The easiest and most effective way to raise folate levels is by taking a folic acid tablet containing 0.5 milligrams (mg) of folic acid every day. * Folic acid is very safe. * Folic acid tablets are available from chemists, health food shops and supermarkets. * You do not need a prescription to buy them and they are not expensive. * Multivitamin tablets often contain folic acid, but not as much as is needed."
+  utter_folate_when_more: 
+    - 
+      text: "Some women need to take more folic acid than the usual recommended amount if they have: * Previously had a baby with a neural tube defect * A close relative who has had a neural tube defect * Spina bifida * Are on some types of medication * Check with your doctor who will advise you on the amount to take."
+  utter_folic_acid_check_doc: 
+    - 
+      text: "If you picked out your own prenatal vitamin, take it to your OB once you're pregnant to make sure it has the recommended amounts of everything you need, including folic acid. All prenatal vitamins are not the same and some may have less or more of the vitamins and minerals you need."
+  utter_folic_acid_dose: 
+    - 
+      text: "Here's how much folic acid is recommended each day in terms of pregnancy: * While you're trying to conceive: 400 mcg * For the first three months of pregnancy: 400 mcg * For months four to nine of pregnancy: 600 mcg * While breastfeeding: 500 mcg"
+  utter_folic_acid_food: 
+    - 
+      text: "Foods that can help you get more folic acid in your diet include: * 400 mcg: Breakfast cereals fortified with 100% of the DV, 3/4 cup * 215 mcg: Beef liver, cooked, braised, 3 oz * 179 mcg: Lentils, mature seeds, cooked, boiled, 1/2 cup * 115 mcg: Spinach, frozen, cooked, boiled, 1/2 cup * 110 mcg: Egg noodles, enriched, cooked, 1/2 cup * 100 mcg: Breakfast cereals, fortified with 25% of the DV, 3/4 cup * 90 mcg: Great Northern beans, boiled, 1/2 cup"
+  utter_folic_acid_not: 
+    - 
+      text: "Without enough folic acid in your body, your baby's neural tube may not close correctly and she could develop health problems called neural tube defects. These include: * Spina bifida: incomplete development of the spinal cord or the vertebrae * Anencephaly: incomplete development of major parts of the brain"
+  utter_folic_acid_start_time: 
+    - 
+      text: "Birth defects occur within the first 3-4 weeks of pregnancy. So it's important to have folate in your system during those early stages when your baby's brain and spinal cord are developing. If you talked to your doctor when you were trying to conceive, she probably told you to start taking a prenatal vitamin with folic acid. One study showed that women who took folic acid for at least a year before getting pregnant cut their chances of delivering early by 50% or more."
+  utter_folic_acid_take_time:
+    -
+      text: "Folic acid is a pregnancy superhero! Taking a prenatal vitamin with the recommended 400 micrograms (mcg) of folic acid before and during pregnancy can help prevent birth defects of your baby's brain and spinal cord. Take it every day and go ahead and have a bowl of fortified cereal, too."
+  
+  #IRON
+  utter_iron_foods: 
+    - 
+      text: "Good sources of iron include lean red meat, followed by pork, chicken and fish. Some plants have iron in them too, like wholegrain breads and cereals, legumes and green leafy vegetables. Your body can absorb the iron in animal foods better than the iron in plant foods. To help your body absorb the iron in plant foods, eat them with foods high in vitamin C, like oranges, tomatoes and capsicum. For example have some fresh fruit when you have your wholegrain breakfast cereal. If you have iron deficiency anaemia, simply improving your diet alone will not give you enough iron, and iron supplements will be needed."
+  utter_iron_increase_tips: 
+    - 
+      text: "At the same time you eat foods that are high in iron, have them with foods that contain vitamin C, such as tomatoes and oranges. Vitamin C helps your body absorb nonheme iron better when you eat both at the same meal. On the other hand, certain drinks and foods prevent your body from absorbing iron. These include coffee, tea, milk, whole grains, and dairy products. Try not to eat these foods at the same meal when you're eating foods high in iron. For example, instead of having coffee or tea with your breakfast cereal, have a glass of orange juice."
+  utter_iron_supplements_side_effects: 
+    - 
+      text: "Take iron supplements exactly as your doctor recommends. They may cause nausea, vomiting, constipation, or diarrhea. Sometimes your body adjusts to the extra iron on its own in a few days. Drinking plenty of water and eating foods high in fiber may also help with constipation. But if you still have side effects, try taking the supplements with food or in two doses. Or ask your doctor if it's safe to take a stool softener."
+  utter_iron_supplements_twins: 
+    - 
+      text: "Taking an iron supplement can help ensure you get enough iron every day. In most cases, you will get enough iron in your prenatal vitamin since many types contain the recommended amount of iron. Your doctor will check your iron levels periodically depending on your test results and if you are a vegetarian.) If your iron level is low, you may need to take an extra iron supplement."
+  utter_iron_why_deficient: 
+    - 
+      text: "Getting enough iron from food when you're pregnant can be difficult, even if you're carefully trying to add iron to your diet. This is especially true if you're a vegetarian or vegan because you don't eat iron-rich meats or poultry. Be sure to tell your doctor if you are a vegetarian so he or she can watch your iron and hemoglobin levels more carefully."
+  
+  #WARNING
+  utter_warning_signs: 
+    - 
+      text: "If any of the following signs occur, the woman should be taken immediately to the hospital or health centre: vaginal bleeding, convulsions/fits, severe headaches with blurred vision, fever and too weak to get out of bed, severe abdominal pain, Fast or difficult breathing, Abdominal pain, Feels ill, Swelling of fingers, face and legs."
+  utter_warning_signs_anterior_placental: 
+    - 
+      text: "Anterior lying placenta and posterior lying placenta are normal. However, if placenta is lying before the baby, the condition is called placenta previa. This can only be detected on ultrasound scan and could lead to bleeding in the later part of pregnancy. The doctor will tell you what to do if this occurs."
+  utter_warning_signs_howto_deal: 
+    - 
+      text: "Don't panic, get help and go to the nearest health facility."
+
+  # DELIVERY AND LABOR
+  utter_delivery:
+    -
+      text: "During your antenatal visits, talk with your doctor or midwife about your labour and delivery options. You may want to write them down as a birth plan: Where to deliver your baby; who to deliver your baby; Resources needed etc. But try to be flexible. No labour and delivery can be predicted or planned. So give yourself permission to change your mind at any time. And be prepared for your childbirth to be different from what you planned. If an emergency arises, your doctor has a responsibility to ensure your safety and your baby's safety. You may still share in decisions, but your choices may be limited."
+  utter_signs_of_labor:
+    -
+      text: "Signs of labour vary for pregnant women; the following are signs of labour: Uterine contractions, Passage of jelly-like discharge mixed with blood, also called “show”, Breaking of the fore water with passage of clear water through the vagina, Jelly-like discharge."
+  utter_labor_expectation:
+    -
+      text: "During the active phase of labor, you will go to the hospital or birthing center. Upon arrival, you will be asked to wear a hospital gown. Your pulse, blood pressure, and temperature will be checked. A monitor will be placed on your abdomen for a short time, or continuously, to check for uterine contractions and assess the baby's heart rate. Your health care provider will also examine your cervix during a pelvic exam to determine how far labor has progressed. An intravenous (IV) line may be placed into a vein in your arm to deliver fluids and medications if necessary."
+  utter_labor_pain_drug_free_1:
+    -
+      text: "Drug-free ways to handle labor pain include Lamaze. This uses relaxation and breathing exercises that can lessen your perception of pain. It also teaches you to use distraction or massage from a supportive coach."
+  utter_labor_pain_drug_free_2:
+    -
+      text: "There’s also the Bradley Method, which includes another person (often the baby’s father) as a birth coach. It encourages a medication-free labor unless medicine is absolutely necessary. Classes that teach this method focus on nutrition, exercise, relaxation, and breathing techniques. But they generally don’t discuss labor problems. You may want to have that talk with your doctor so you’re prepared."
+  utter_labor_pain_drug_free_3:
+    -
+      text: "When labor arrives, some women also use other methods to help ease the pain, including walking, massage, trying to relax, taking a bath or shower, shifting position, and listening to music."
+  utter_labor_pain_medication:
+    -
+      text: "There are two types of medicine that can ease pain during labor: Some analgesics work on your whole body. Others can reduce pain in smaller areas, like your vagina, vulva, and perineum. Other analgesics or anesthetics lessen or block pain in bigger areas of your body. During labor, these medications can numb pain below your waist. They include epidural block, spinal block, and combined spinal-epidural (CSE) block. Analgesics reduce pain, but you can still feel things. Anesthetics numb you. They can block pain and all other feeling."
+  utter_premature_labor_symptoms:
+    -
+      text: "The warning signs or premature labor are: Backache, which usually will be in your lower back; Cramping in your lower abdomen or menstrual-like cramps; Fluid leaking from your vagina. Flu-like symptoms such as nausea, vomiting, or diarrhea; Increased pressure in your pelvis or vagina; Increased vaginal discharge; Vaginal bleeding, including light bleeding"
+  utter_premature_labor_risk_0:
+    -
+      text: "Some risk factors associated with pre-term labour/delivery include:" 
+  utter_premature_labor_risk_1:
+    - 
+      text: "History of preterm labour/delivery or previous low infant birth-weight"
+  utter_premature_labor_risk_2:
+    - 
+      text: "History of preterm labour/delivery or previous low infant birth-weight"  
+  utter_premature_labor_risk_3:
+    - 
+      text: "Multi-foetal pregnancy (for example, twins or triplets)"  
+
+  utter_premature_labor_risk_4:
+    - 
+      text: "Maternal age (less than 17 or over 35 yrs)" 
+  utter_premature_labor_risk_5:
+    - 
+      text: "Black race"  
+  utter_premature_labor_risk_6:
+    - 
+      text: "Folic acid deficiency"
+  utter_premature_labor_risk_7:
+    - 
+      text: "3+ spontaneous terminations"
+  utter_premature_labor_risk_8:
+    - 
+      text: "Uterine abnormalities"
+  utter_premature_labor_risk_9:
+    - 
+      text: "Infections, Bleeding, Anaemia, Obesity, Drug or alcohol abuse"
+  utter_premature_labor:
+    -
+      text: "If you are diagnosed with premature labor, you may need treatment, which may include: IV fluids; Medicine to relax your uterus and stop labor; Medicine to speed up the development of your baby's lungs; Antibiotics; Being admitted to the hospital"
+  utter_castor_oil_labor:
+    -
+      text: "Some people recommend a dose of castor oil to kick-start labor, but it tastes terrible and violent diarrhea might spoil the mood. It is not recommended."
+  utter_labor_feels:
+    -
+      text: "Labor is different for every woman, with pain ranging from mild to extreme. Even the epidural reactions varied widely. One mom used the words of Forrest Gump to describe it: 'Labor is like a box of chocolates, you never know what you're going to get.'"   
+  utter_active_labor_1:
+    -
+      text: "If you're planning to have your baby in a hospital or birth centre, the active phase of the first stage of labour is the time to go. This starts when your cervix is about 4cm dilated, and lasts until it's about 8cm dilated. It's also known as 'established labour'."
+  utter_active_labor_2:
+    -
+      text: "The main sign that you're moving into active (established) labour is painful, regular contractions. These gradually become more frequent, longer, and stronger in intensity."
+  utter_active_labor_3:
+    -
+      text: "While you're in active labour, listen to your body and watch out for how you're feeling. As labour intensifies, you're likely to talk less. You'll find holding a conversation during a contraction more difficult. You may notice that you have to pause as each surge builds, leaning forward and rocking your pelvis to help you through it."
+  utter_contractions_1:
+    -
+      text: "If you're having true contractions, which get progressively stronger, longer and more frequent, chances are you're in labour. But you may experience Braxton Hicks contractions (sometimes called 'practice contractions') long before the big day."
+  utter_contractions_2:
+    -
+      text: "It can sometimes be easy to mistake Braxton Hicks contractions for the real thing, especially if you haven't had a baby before. One way to tell the difference, is that Braxton Hicks contractions often go away if you change position. So if you're sitting, try getting up and walking around, or vice-versa."
+  utter_contractions_3:
+    -
+      text: "If you're not sure whether you're having true contractions or Braxton Hicks, call your midwife. She may be able to tell just by asking you some questions, and listening to your tone of voice and breathing."
+
+session_config: 
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60
+
+slots:
+    pregnancy_duration:
+      type: text
+    word:
+      type: text

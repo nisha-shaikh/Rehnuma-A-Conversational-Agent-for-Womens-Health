@@ -1,0 +1,31 @@
+[
+  {
+    "text": "What is Intrauterine growth restriction (IUGR)",
+    "entities": [
+      {
+        "start": 8,
+        "end": 46,
+        "value": "Intrauterine growth restriction (IUGR)",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What should I ask in my antenatal visits?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "antenatal appointments",
+        "entity": "visit_type",
+        "confidence": 0.9170594576318031,
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

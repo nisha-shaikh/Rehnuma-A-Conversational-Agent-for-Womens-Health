@@ -1,0 +1,760 @@
+[
+  {
+    "text": "What is Mask of pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "Mask of pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Mask",
+        "start": 8,
+        "end": 12,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is Preterm labor",
+    "entities": [
+      {
+        "start": 8,
+        "end": 21,
+        "value": "Preterm labor",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Preterm",
+        "start": 8,
+        "end": 15,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "what is Ectopic pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "Ectopic pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is External cephalic version",
+    "entities": [
+      {
+        "start": 8,
+        "end": 33,
+        "value": "External cephalic version",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "External",
+        "start": 8,
+        "end": 16,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "cephalic version",
+        "start": 17,
+        "end": 33,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Tell me about anesthesia",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is High risk pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "High risk pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "High risk",
+        "start": 8,
+        "end": 17,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hello",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "hello",
+        "start": 0,
+        "end": 5,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My attendant during appointments?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is it ok to bring husband with me?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "husband",
+        "entity": "attendee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "husband",
+        "start": 18,
+        "end": 25,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Who can come along with me during my visits?",
+    "entities": [
+      {
+        "start": 37,
+        "end": 43,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will bringing a friend to the visits be fine?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "friend",
+        "entity": "attendee"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "bringing",
+        "start": 5,
+        "end": 13,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Is my partner allowed to come with me for antenatal visits?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "partner",
+        "entity": "attendee"
+      },
+      {
+        "start": 42,
+        "end": 58,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "partner allowed",
+        "start": 6,
+        "end": 21,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 42,
+        "end": 58,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I am pregnant for the first time. How many times should i visit the doctor",
+    "entities": [
+      {
+        "start": 58,
+        "end": 74,
+        "value": "visit the doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "first time",
+        "start": 22,
+        "end": 32,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the recommended no. of visits for me?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 37,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the first antenatal visit about?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "the",
+        "start": 8,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 18,
+        "end": 33,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Antenatal care's advantage",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 0,
+        "end": 14,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "visit_type",
+        "value": "'s advantage",
+        "start": 14,
+        "end": 26,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What if i can't attend antenatal clinic?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 39,
+        "value": "antenatal clinic",
+        "entity": "care_from_where"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "antenatal clinic",
+        "start": 23,
+        "end": 39,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Will I be asked anything during my antenatal visits?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 51,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "I",
+        "start": 5,
+        "end": 6,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 35,
+        "end": 51,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Should I see a doctor now that I am pregnant?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Should",
+        "start": 0,
+        "end": 6,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is the right time to see a doctor during pregnancy?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me how to calculate my baby's due date",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "due date",
+        "start": 35,
+        "end": 43,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My pregnancy has been one hundred and eighty-two days old. Update me on my baby's growth.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 53,
+        "value": "one hundred and eighty-two days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "been one",
+        "start": 17,
+        "end": 25,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "and eighty-two days",
+        "start": 34,
+        "end": 53,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "baby's size in week sixth",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "week sixth",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "in week",
+        "start": 12,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "hundred and five days pregnant. What is my fetus size?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "hundred and five days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in week ten",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "week ten",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "in week",
+        "start": 12,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Should I be worried that my baby is not moving frequently?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Should",
+        "start": 0,
+        "end": 6,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My baby hasn't started kicking yet. When will it do?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "kicking yet",
+        "start": 23,
+        "end": 34,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My doctor recommended to take in more calcium-rich foods. Can you suggest them?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "more calcium-rich",
+        "start": 33,
+        "end": 50,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What does a doctor when checking pregnancy through internal examination.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "doctor when checking",
+        "start": 12,
+        "end": 32,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Why is folate good?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "folate",
+        "start": 7,
+        "end": 13,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "folate advantages",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "folate advantages",
+        "start": 0,
+        "end": 17,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Food containing folate",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "folate",
+        "start": 16,
+        "end": 22,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Will my doctor help me out with my medication?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "doctor help",
+        "start": 8,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is anencephaly?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "anencephaly",
+        "start": 8,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Folic acid in which stage of pregnancy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "which stage",
+        "start": 14,
+        "end": 25,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Why is folic acid taken before and during pregnancy?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "folic",
+        "start": 7,
+        "end": 12,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Should I tell my doctor I'm a vegetarian?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Should",
+        "start": 0,
+        "end": 6,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "visit_type",
+        "value": "doctor I'm",
+        "start": 17,
+        "end": 27,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "My abdomen hurts.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": ".",
+        "start": 16,
+        "end": 17,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is placenta previa?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "Placenta",
+        "start": 8,
+        "end": 16,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Will using castor oil harm me?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "using",
+        "start": 5,
+        "end": 10,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "False alarm",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "False alarm",
+        "start": 0,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  }
+]

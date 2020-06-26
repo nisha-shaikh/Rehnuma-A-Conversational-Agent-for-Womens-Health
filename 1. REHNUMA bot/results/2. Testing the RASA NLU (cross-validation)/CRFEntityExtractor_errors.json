@@ -1,0 +1,766 @@
+[
+  {
+    "text": "What is High risk pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "High risk pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Neural tube defect",
+    "entities": [
+      {
+        "start": 8,
+        "end": 26,
+        "value": "Neural tube defect",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Round ligament pain",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "Round ligament pain",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Amniotic fluid",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "Amniotic fluid",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My attendant during appointments?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What happens in the first hospital visit?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 26,
+        "end": 40,
+        "value": "hospital visit",
+        "entity": "visit_type",
+        "confidence": 0.6252203629058612,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I feel perfectly fine, so I can skip my doctor's appointment, right?",
+    "entities": [
+      {
+        "start": 40,
+        "end": 60,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Should I see a doctor now that I am pregnant?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am twenty-five weeks pregnant. How grown is my baby?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 22,
+        "value": "twenty-five weeks",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My pregnancy has been six months old. Update me on my baby's growth.",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": "six months old",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What should I ask in my antenatal visits?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 24,
+        "end": 40,
+        "value": "antenatal appointments",
+        "entity": "visit_type",
+        "confidence": 0.9951806385746083,
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What is Lamaze?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Lamaze",
+        "entity": "word",
+        "confidence": 0.8175428606665723,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is first stage",
+    "entities": [
+      {
+        "start": 8,
+        "end": 19,
+        "value": "first stage",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Intrauterine growth restriction (IUGR)",
+    "entities": [
+      {
+        "start": 8,
+        "end": 46,
+        "value": "Intrauterine growth restriction (IUGR)",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is MFM",
+    "entities": [
+      {
+        "start": 8,
+        "end": 11,
+        "value": "MFM",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is placenta",
+    "entities": [
+      {
+        "start": 8,
+        "end": 16,
+        "value": "placenta",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is External cephalic version",
+    "entities": [
+      {
+        "start": 8,
+        "end": 33,
+        "value": "External cephalic version",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the meaning of Braxton Hicks",
+    "entities": [
+      {
+        "start": 23,
+        "end": 36,
+        "value": "Braxton Hicks",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Are fathers recommended to attend visits as well?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 11,
+        "value": "father",
+        "entity": "attendee"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 34,
+        "end": 40,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.6598607426402859,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Husband wants to come with me, is it okay?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "husband",
+        "entity": "attendee"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will bringing a friend to the visits be fine?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "friend",
+        "entity": "attendee"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.7835290442054341,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What will the doctor visits include?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 21,
+        "end": 27,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.6751827852645246,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "baby's size in week ten",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "week ten",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 15,
+        "end": 19,
+        "value": "week",
+        "entity": "pregnancy_duration",
+        "confidence": 0.5008089086814358,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "When is the right time to see a doctor if I can't feel my baby move?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "see a doctor",
+        "entity": "visit_type",
+        "confidence": 0.5408130701237147,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Is it necessary to go see a doctor to confirm pregnancy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 22,
+        "end": 34,
+        "value": "see a doctor",
+        "entity": "visit_type",
+        "confidence": 0.6156409007401341,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is 1st stage of labor",
+    "entities": [
+      {
+        "start": 8,
+        "end": 26,
+        "value": "1st stage of labor",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the meaning of anesthesia",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can I bring my mother to the visits?",
+    "entities": [
+      {
+        "start": 15,
+        "end": 21,
+        "value": "family member",
+        "entity": "attendee"
+      },
+      {
+        "start": 29,
+        "end": 35,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 29,
+        "end": 35,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.8935165945805347,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "I am pregnant for the first time. How many times should i visit the doctor",
+    "entities": [
+      {
+        "start": 58,
+        "end": 74,
+        "value": "visit the doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is High-risk pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "High-risk pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Mask of pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "Mask of pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is preterm labor",
+    "entities": [
+      {
+        "start": 8,
+        "end": 21,
+        "value": "preterm labor",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Quickening",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "Quickening",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can father of the child come along for antenatal visits?",
+    "entities": [
+      {
+        "start": 4,
+        "end": 23,
+        "value": "father",
+        "entity": "attendee"
+      },
+      {
+        "start": 39,
+        "end": 55,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 4,
+        "end": 10,
+        "value": "father",
+        "entity": "attendee",
+        "confidence": 0.8255792737348244,
+        "extractor": "CRFEntityExtractor"
+      },
+      {
+        "start": 39,
+        "end": 55,
+        "value": "antenatal appointments",
+        "entity": "visit_type",
+        "confidence": 0.9717294290378155,
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "May I bring along a family member to the visits?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 33,
+        "value": "family member",
+        "entity": "attendee"
+      },
+      {
+        "start": 41,
+        "end": 47,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 41,
+        "end": 47,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.9001297569010603,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What should I know before visiting the hospital for the first time?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 47,
+        "value": "hospital visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I don't feel the need to see a doctor.",
+    "entities": [
+      {
+        "start": 25,
+        "end": 37,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 25,
+        "end": 30,
+        "value": "see a",
+        "entity": "visit_type",
+        "confidence": 0.45873568413147614,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "baby's size in ninety eight days",
+    "entities": [
+      {
+        "start": 15,
+        "end": 32,
+        "value": "ninety eight days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How big would my baby in first trimester?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 40,
+        "value": "first trimester",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How big would my baby in trimester 3?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 36,
+        "value": "trimester 3",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 25,
+        "end": 34,
+        "value": "trimester",
+        "entity": "pregnancy_duration",
+        "confidence": 0.4804732714032441,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Who is a midwife",
+    "entities": [
+      {
+        "start": 9,
+        "end": 16,
+        "value": "midwife",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who is a Obstetric anesthetists",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "Obstetric anesthetists",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who is a Perinatologists",
+    "entities": [
+      {
+        "start": 9,
+        "end": 24,
+        "value": "Perinatologists",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Down Syndrome",
+    "entities": [
+      {
+        "start": 14,
+        "end": 27,
+        "value": "Down Syndrome",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will father of the baby be allowed in antenatal visits?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 11,
+        "value": "father",
+        "entity": "attendee"
+      },
+      {
+        "start": 38,
+        "end": 54,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 38,
+        "end": 54,
+        "value": "antenatal appointments",
+        "entity": "visit_type",
+        "confidence": 0.9742451853742679,
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "How many times should i see a doctor during pregnancy?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "start": 24,
+        "end": 36,
+        "value": "see a doctor",
+        "entity": "visit_type",
+        "confidence": 0.5943170125381301,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Two months pregnant. Tell me how grown my baby is.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Two months",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in week sixth",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "week sixth",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hundred and five days pregnant. What is my fetus size?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "hundred and five days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How big would my baby in one and a half month?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 45,
+        "value": "one and a half month",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 25,
+        "end": 32,
+        "value": "one and",
+        "entity": "pregnancy_duration",
+        "confidence": 0.6977595253693397,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  }
+]

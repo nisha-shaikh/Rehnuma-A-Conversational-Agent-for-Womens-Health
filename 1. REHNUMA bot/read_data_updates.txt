@@ -1,0 +1,6 @@
+- removed 'allowed_drinks' and 'allowed_food' from all files
+- utterance missing for baby growth
+- response missing for home_pregnancy_test_how
+
+- some warnings related to entities that I can't figure out. 
+All other warnings sorted.

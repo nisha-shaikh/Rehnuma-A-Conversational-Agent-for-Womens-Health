@@ -1,0 +1,706 @@
+[
+  {
+    "text": "hello",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.04960770393164102
+    }
+  },
+  {
+    "text": "hey",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.03549867898726714
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "folate_how_to_increase",
+      "confidence": 0.045099877998740795
+    }
+  },
+  {
+    "text": "I don't think so",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.03444815238099419
+    }
+  },
+  {
+    "text": "never",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "baby_moves_feel",
+      "confidence": 0.042624888121375056
+    }
+  },
+  {
+    "text": "wonderful",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.038315551891066356
+    }
+  },
+  {
+    "text": "very good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.12150012823084769
+    }
+  },
+  {
+    "text": "sad",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "home_pregnancy_test_accuracy",
+      "confidence": 0.04285923651904396
+    }
+  },
+  {
+    "text": "Who will I be seeing at my antenatal appointments?",
+    "intent": "antenatal_visit_attendant",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.03853321699316984
+    }
+  },
+  {
+    "text": "My attendant during appointments?",
+    "intent": "antenatal_visit_attendant",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.05119704645423728
+    }
+  },
+  {
+    "text": "What is the recommended no. of visits for me?",
+    "intent": "antenatal_visit_frequency",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.043151533237726816
+    }
+  },
+  {
+    "text": "What information should I take along when going for my first antenatal visit?",
+    "intent": "antenatal_visit_info_first_time",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.038092051616039846
+    }
+  },
+  {
+    "text": "Reasons to get antenatal care",
+    "intent": "antenatal_visit_necessary",
+    "intent_prediction": {
+      "name": "antenatal_visit_info_first_time",
+      "confidence": 0.03774922608559016
+    }
+  },
+  {
+    "text": "What if i can't attend antenatal clinic?",
+    "intent": "antenatal_visit_not_attend",
+    "intent_prediction": {
+      "name": "antenatal_visit_info_first_time",
+      "confidence": 0.03339767586478119
+    }
+  },
+  {
+    "text": "I am a working woman. I cannot take time for antenatal care",
+    "intent": "antenatal_visit_not_attend",
+    "intent_prediction": {
+      "name": "baby_moves_not",
+      "confidence": 0.031544390188675865
+    }
+  },
+  {
+    "text": "Tell me what happens at antenatal visits",
+    "intent": "antenatal_visit_what_happens",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.08513646648665549
+    }
+  },
+  {
+    "text": "What will the doctor visits include?",
+    "intent": "antenatal_visit_what_happens",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.0638873833279263
+    }
+  },
+  {
+    "text": "I found out I am pregnant. Should I start getting antenatal care immediately?",
+    "intent": "antenatal_visit_when_start",
+    "intent_prediction": {
+      "name": "baby_moves_not",
+      "confidence": 0.03710738081506213
+    }
+  },
+  {
+    "text": "When can I go for antenatal care?",
+    "intent": "antenatal_visit_when_start",
+    "intent_prediction": {
+      "name": "antenatal_visit_necessary",
+      "confidence": 0.03404963682491142
+    }
+  },
+  {
+    "text": "When will the fetus be fully formed?",
+    "intent": "baby_due_date",
+    "intent_prediction": {
+      "name": "labor_pain_drug_free",
+      "confidence": 0.030837769074962267
+    }
+  },
+  {
+    "text": "Due Date Calculator",
+    "intent": "baby_due_date",
+    "intent_prediction": {
+      "name": "pregnancy_confirm",
+      "confidence": 0.039049134092044406
+    }
+  },
+  {
+    "text": "As my pregnancy progresses, will my baby's movement change?",
+    "intent": "baby_moves_feel",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.07432044523275957
+    }
+  },
+  {
+    "text": "How will I know my baby is kicking?",
+    "intent": "baby_moves_feel",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.04133342158508214
+    }
+  },
+  {
+    "text": "How does babies' motion change during pregnancy?",
+    "intent": "baby_moves_feel",
+    "intent_prediction": {
+      "name": "pregnancy_test_internal_exam",
+      "confidence": 0.026464921816126145
+    }
+  },
+  {
+    "text": "Should I be checking up on my baby's movement?",
+    "intent": "baby_moves_monitor",
+    "intent_prediction": {
+      "name": "baby_moves_not",
+      "confidence": 0.04002145938218349
+    }
+  },
+  {
+    "text": "Is it required of me to monitor baby's motion?",
+    "intent": "baby_moves_monitor",
+    "intent_prediction": {
+      "name": "baby_moves_not",
+      "confidence": 0.03522042035686378
+    }
+  },
+  {
+    "text": "Baby doesn't kick.",
+    "intent": "baby_moves_not",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.03342548964594914
+    }
+  },
+  {
+    "text": "When during my pregnancy will I feel my baby kicking?",
+    "intent": "baby_moves_start",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.041872324807274874
+    }
+  },
+  {
+    "text": "Baby movement start time",
+    "intent": "baby_moves_start",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.05417756635827999
+    }
+  },
+  {
+    "text": "What amount of calcium is best for me to take?",
+    "intent": "calcium_amount",
+    "intent_prediction": {
+      "name": "glossary",
+      "confidence": 0.03575340593016044
+    }
+  },
+  {
+    "text": "How much calcium do you need during pregnancy?",
+    "intent": "calcium_amount",
+    "intent_prediction": {
+      "name": "calcium_side_effects",
+      "confidence": 0.038761438562151855
+    }
+  },
+  {
+    "text": "Best sources of calcium.",
+    "intent": "calcium_foods",
+    "intent_prediction": {
+      "name": "calcium_supplements",
+      "confidence": 0.04982585688928875
+    }
+  },
+  {
+    "text": "List foods that contain calcium",
+    "intent": "calcium_foods",
+    "intent_prediction": {
+      "name": "calcium_amount",
+      "confidence": 0.040296557163124684
+    }
+  },
+  {
+    "text": "I am pregnant and have calcium deficiency. Suggest me in what vegetables I can find them.",
+    "intent": "calcium_foods",
+    "intent_prediction": {
+      "name": "blood_pregnancy_test",
+      "confidence": 0.03210170757048263
+    }
+  },
+  {
+    "text": "What are calcium supplements?",
+    "intent": "calcium_supplements",
+    "intent_prediction": {
+      "name": "calcium_side_effects",
+      "confidence": 0.03989102843940617
+    }
+  },
+  {
+    "text": "What do I need to know about calcium supplements?",
+    "intent": "calcium_supplements",
+    "intent_prediction": {
+      "name": "calcium_side_effects",
+      "confidence": 0.037162922847344036
+    }
+  },
+  {
+    "text": "How reliable is a blood test for pregnancy?",
+    "intent": "blood_pregnancy_test",
+    "intent_prediction": {
+      "name": "pregnancy_test",
+      "confidence": 0.03136767264838724
+    }
+  },
+  {
+    "text": "Can a blood test tell me if I am expecting?",
+    "intent": "blood_pregnancy_test",
+    "intent_prediction": {
+      "name": "baby_moves_not",
+      "confidence": 0.02846823228865115
+    }
+  },
+  {
+    "text": "How does a blood test confirm pregnancy?",
+    "intent": "blood_pregnancy_test",
+    "intent_prediction": {
+      "name": "pregnancy_test",
+      "confidence": 0.03880776760531822
+    }
+  },
+  {
+    "text": "Making sure that home pregnancy test is reliable.",
+    "intent": "home_pregnancy_test_accuracy",
+    "intent_prediction": {
+      "name": "pregnancy_test",
+      "confidence": 0.031269964075658595
+    }
+  },
+  {
+    "text": "Urine test for pregnancy",
+    "intent": "home_pregnancy_test_accuracy",
+    "intent_prediction": {
+      "name": "pregnancy_test",
+      "confidence": 0.044145224479573975
+    }
+  },
+  {
+    "text": "Pregnancy confirmation",
+    "intent": "pregnancy_confirm",
+    "intent_prediction": {
+      "name": "pregnancy_test",
+      "confidence": 0.03941755637085613
+    }
+  },
+  {
+    "text": "I want to confirm if I am pregnant.",
+    "intent": "pregnancy_confirm",
+    "intent_prediction": {
+      "name": "antenatal_visit_frequency",
+      "confidence": 0.03553051679392087
+    }
+  },
+  {
+    "text": "How to know if i am pregnant?",
+    "intent": "pregnancy_confirm",
+    "intent_prediction": {
+      "name": "antenatal_visit_frequency",
+      "confidence": 0.03547585627274476
+    }
+  },
+  {
+    "text": "What tests are available in the market to be sure that you are pregnant?",
+    "intent": "pregnancy_test",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.031140786144778103
+    }
+  },
+  {
+    "text": "What does a doctor when checking pregnancy through internal examination.",
+    "intent": "pregnancy_test_internal_exam",
+    "intent_prediction": {
+      "name": "blood_pregnancy_test",
+      "confidence": 0.03236057742073236
+    }
+  },
+  {
+    "text": "I will be getting an internal examination done. Tell me something about it.",
+    "intent": "pregnancy_test_internal_exam",
+    "intent_prediction": {
+      "name": "blood_pregnancy_test",
+      "confidence": 0.031634867013191556
+    }
+  },
+  {
+    "text": "What are some healthy foods to eat?",
+    "intent": "diet_what_to_eat",
+    "intent_prediction": {
+      "name": "pregnancy_test_internal_exam",
+      "confidence": 0.027348576265783964
+    }
+  },
+  {
+    "text": "Which foods are good in pregnancy",
+    "intent": "diet_what_to_eat",
+    "intent_prediction": {
+      "name": "antenatal_visit_necessary",
+      "confidence": 0.030648177832438082
+    }
+  },
+  {
+    "text": "What are the advantages of folate intake?",
+    "intent": "folate_benefits",
+    "intent_prediction": {
+      "name": "iron_increase_tips",
+      "confidence": 0.031342533091946595
+    }
+  },
+  {
+    "text": "Folate benefits",
+    "intent": "folate_benefits",
+    "intent_prediction": {
+      "name": "folate_how_to_increase",
+      "confidence": 0.030825750700189183
+    }
+  },
+  {
+    "text": "Food containing folate",
+    "intent": "folate_food_items",
+    "intent_prediction": {
+      "name": "folate_how_to_increase",
+      "confidence": 0.03731139960438696
+    }
+  },
+  {
+    "text": "Folate rich food",
+    "intent": "folate_food_items",
+    "intent_prediction": {
+      "name": "folate_how_to_increase",
+      "confidence": 0.036436432485008656
+    }
+  },
+  {
+    "text": "At what stage would I need to take more folate?",
+    "intent": "folate_when_more",
+    "intent_prediction": {
+      "name": "delivery",
+      "confidence": 0.0303451794352521
+    }
+  },
+  {
+    "text": "How can consulting a doctor for medication help?",
+    "intent": "folic_acid_check_doc",
+    "intent_prediction": {
+      "name": "antenatal_visit_frequency",
+      "confidence": 0.045505819691277455
+    }
+  },
+  {
+    "text": "Will my doctor help me out with my medication?",
+    "intent": "folic_acid_check_doc",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.07433627282222627
+    }
+  },
+  {
+    "text": "Can I get folic acid from lentils?",
+    "intent": "folic_acid_food",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.04012390738055558
+    }
+  },
+  {
+    "text": "Does spinach have folic acid?",
+    "intent": "folic_acid_food",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.038437148445460034
+    }
+  },
+  {
+    "text": "Is folic acid important for my baby's health?",
+    "intent": "folic_acid_not",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.03448716109486189
+    }
+  },
+  {
+    "text": "What are neural tube defects caused by?",
+    "intent": "folic_acid_not",
+    "intent_prediction": {
+      "name": "warning_signs_anterior_placental",
+      "confidence": 0.028448744600946735
+    }
+  },
+  {
+    "text": "Can I take folic acid with prenatal vitamins?",
+    "intent": "folic_acid_start_time",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.03188974988938789
+    }
+  },
+  {
+    "text": "How early can I start taking folic acid?",
+    "intent": "folic_acid_start_time",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.038934472865720084
+    }
+  },
+  {
+    "text": "Should I take folic acid every day?",
+    "intent": "folic_acid_take_time",
+    "intent_prediction": {
+      "name": "folic_acid_dose",
+      "confidence": 0.04009729664425
+    }
+  },
+  {
+    "text": "How can I prevent birth defects?",
+    "intent": "folic_acid_take_time",
+    "intent_prediction": {
+      "name": "folate_benefits",
+      "confidence": 0.027715337549514253
+    }
+  },
+  {
+    "text": "How can I get iron in my diet?",
+    "intent": "iron_foods",
+    "intent_prediction": {
+      "name": "iron_increase_tips",
+      "confidence": 0.03457378160282012
+    }
+  },
+  {
+    "text": "What foods are high in iron?",
+    "intent": "iron_foods",
+    "intent_prediction": {
+      "name": "iron_increase_tips",
+      "confidence": 0.032037255299018304
+    }
+  },
+  {
+    "text": "It's difficult to get iron from diet.",
+    "intent": "iron_why_deficient",
+    "intent_prediction": {
+      "name": "iron_increase_tips",
+      "confidence": 0.03170812969868307
+    }
+  },
+  {
+    "text": "Can I get enough iron from my diet?",
+    "intent": "iron_why_deficient",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.04058992722943257
+    }
+  },
+  {
+    "text": "Warning signs to look out for",
+    "intent": "warning_signs",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.03750712001557961
+    }
+  },
+  {
+    "text": "Signs of danger in pregnancy",
+    "intent": "warning_signs",
+    "intent_prediction": {
+      "name": "warning_signs_anterior_placental",
+      "confidence": 0.03296528310476005
+    }
+  },
+  {
+    "text": "What to do when I see any signs of danger?",
+    "intent": "warning_signs_howto_deal",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.0333113791167524
+    }
+  },
+  {
+    "text": "Something is wrong with my pregnancy",
+    "intent": "warning_signs_howto_deal",
+    "intent_prediction": {
+      "name": "antenatal_visit_attendee",
+      "confidence": 0.056311889580971594
+    }
+  },
+  {
+    "text": "Can the expected date of delivery change?",
+    "intent": "delivery",
+    "intent_prediction": {
+      "name": "warning_signs_anterior_placental",
+      "confidence": 0.033387131675018875
+    }
+  },
+  {
+    "text": "How do I plan for delivery?",
+    "intent": "delivery",
+    "intent_prediction": {
+      "name": "antenatal_visit_frequency",
+      "confidence": 0.027067983671243523
+    }
+  },
+  {
+    "text": "Are the signs of labor the same for everyone?",
+    "intent": "signs_of_labor",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.04212427543628675
+    }
+  },
+  {
+    "text": "What are some signs of labor?",
+    "intent": "signs_of_labor",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.05445978428665903
+    }
+  },
+  {
+    "text": "What will I feel during the active phase of labor?",
+    "intent": "labor_expectation",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.04921537918722777
+    }
+  },
+  {
+    "text": "How will my doctor check how far the labor has progressed?",
+    "intent": "labor_expectation",
+    "intent_prediction": {
+      "name": "premature_labor",
+      "confidence": 0.03030491805314529
+    }
+  },
+  {
+    "text": "Are there any herbal methods to reduce labour pain?",
+    "intent": "labor_pain_drug_free",
+    "intent_prediction": {
+      "name": "contractions",
+      "confidence": 0.038542058896787176
+    }
+  },
+  {
+    "text": "What is Lamaze?",
+    "intent": "labor_pain_drug_free",
+    "intent_prediction": {
+      "name": "glossary",
+      "confidence": 0.07760625537450971
+    }
+  },
+  {
+    "text": "What is the difference between anesthetics and Analgesics?",
+    "intent": "labor_pain_medication",
+    "intent_prediction": {
+      "name": "labor_pain_drug_free",
+      "confidence": 0.03216316246594921
+    }
+  },
+  {
+    "text": "What are medications for labor pain?",
+    "intent": "labor_pain_medication",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.04041461369583415
+    }
+  },
+  {
+    "text": "What is a severe lower back pain an indication for?",
+    "intent": "premature_labor_symptoms",
+    "intent_prediction": {
+      "name": "warning_signs_anterior_placental",
+      "confidence": 0.030949378275359415
+    }
+  },
+  {
+    "text": "What are the symptoms of premature labor?",
+    "intent": "premature_labor_symptoms",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.040182147616576395
+    }
+  },
+  {
+    "text": "What should I do in early labor?",
+    "intent": "premature_labor",
+    "intent_prediction": {
+      "name": "active_labor",
+      "confidence": 0.034906643021278834
+    }
+  },
+  {
+    "text": "Active labor signs",
+    "intent": "active_labor",
+    "intent_prediction": {
+      "name": "labor_expectation",
+      "confidence": 0.10053563959729668
+    }
+  },
+  {
+    "text": "What are Braxton Hicks?",
+    "intent": "contractions",
+    "intent_prediction": {
+      "name": "warning_signs_anterior_placental",
+      "confidence": 0.03363474102443072
+    }
+  },
+  {
+    "text": "False alarm",
+    "intent": "contractions",
+    "intent_prediction": {
+      "name": "baby_growth",
+      "confidence": 0.12447772271738282
+    }
+  }
+]

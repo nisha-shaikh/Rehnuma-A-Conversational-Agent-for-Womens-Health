@@ -1,0 +1,264 @@
+[
+  {
+    "text": "My attendant during appointments?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is it ok to bring husband with me?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 25,
+        "value": "husband",
+        "entity": "attendee"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "ok",
+        "start": 6,
+        "end": 8,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      },
+      {
+        "entity": "attendee",
+        "value": "husband",
+        "start": 18,
+        "end": 25,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I am pregnant for the first time. How many times should i visit the doctor",
+    "entities": [
+      {
+        "start": 58,
+        "end": 74,
+        "value": "visit the doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Antenatal care's advantage",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "antenatal appointments",
+        "start": 0,
+        "end": 14,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "visit_type",
+        "value": "'s advantage",
+        "start": 14,
+        "end": 26,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Should I see a doctor now that I am pregnant?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the right time to see a doctor during pregnancy?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me how to calculate my baby's due date",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "due date",
+        "start": 35,
+        "end": 43,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "baby's size in week sixth",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "week sixth",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in week ten",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "week ten",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Suggests some tests that I can take to confirm that I am pregnant",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "attendee",
+        "value": "Suggests",
+        "start": 0,
+        "end": 8,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "folate advantages",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "visit_type",
+        "value": "folate advantages",
+        "start": 0,
+        "end": 17,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Will my doctor help me out with my medication?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "medication",
+        "start": 35,
+        "end": 45,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Folic acid in Great Northern beans",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "beans",
+        "start": 29,
+        "end": 34,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What is anencephaly?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "anencephaly",
+        "start": 8,
+        "end": 19,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Folic acid in which stage of pregnancy",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "which stage of pregnancy",
+        "start": 14,
+        "end": 38,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "What should I do in early labor?",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "pregnancy_duration",
+        "value": "early labor",
+        "start": 20,
+        "end": 31,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "False alarm",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "word",
+        "value": "False alarm",
+        "start": 0,
+        "end": 11,
+        "confidence": null,
+        "extractor": "MitieEntityExtractor"
+      }
+    ]
+  }
+]

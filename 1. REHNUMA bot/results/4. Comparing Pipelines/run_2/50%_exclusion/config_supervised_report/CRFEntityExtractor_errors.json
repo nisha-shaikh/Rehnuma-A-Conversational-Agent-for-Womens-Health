@@ -1,0 +1,263 @@
+[
+  {
+    "text": "What is Mask of pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 25,
+        "value": "Mask of pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Anesthesia",
+    "entities": [
+      {
+        "start": 8,
+        "end": 18,
+        "value": "Anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is External cephalic version",
+    "entities": [
+      {
+        "start": 8,
+        "end": 33,
+        "value": "External cephalic version",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Cesarean",
+    "entities": [
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Cesarean",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about anesthesia",
+    "entities": [
+      {
+        "start": 14,
+        "end": 24,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is High risk pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "High risk pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My attendant during appointments?",
+    "entities": [
+      {
+        "start": 20,
+        "end": 32,
+        "value": "appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will bringing a friend to the visits be fine?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "friend",
+        "entity": "attendee"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type",
+        "confidence": 0.513842840406373,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Is my partner allowed to come with me for antenatal visits?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "partner",
+        "entity": "attendee"
+      },
+      {
+        "start": 42,
+        "end": 58,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 42,
+        "end": 58,
+        "value": "antenatal appointments",
+        "entity": "visit_type",
+        "confidence": 0.7733531322500314,
+        "extractor": "CRFEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "I am pregnant for the first time. How many times should i visit the doctor",
+    "entities": [
+      {
+        "start": 58,
+        "end": 74,
+        "value": "visit the doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the recommended no. of visits for me?",
+    "entities": [
+      {
+        "start": 31,
+        "end": 37,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the first antenatal visit about?",
+    "entities": [
+      {
+        "start": 18,
+        "end": 33,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What happens at your antenatal visit?",
+    "entities": [
+      {
+        "start": 21,
+        "end": 36,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Should I see a doctor now that I am pregnant?",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the right time to see a doctor during pregnancy?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 38,
+        "value": "see a doctor",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in week sixth",
+    "entities": [
+      {
+        "start": 15,
+        "end": 25,
+        "value": "week sixth",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "hundred and five days pregnant. What is my fetus size?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 21,
+        "value": "hundred and five days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in week ten",
+    "entities": [
+      {
+        "start": 15,
+        "end": 23,
+        "value": "week ten",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am two weeks pregnant. How grown is my baby?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 14,
+        "value": "two weeks",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

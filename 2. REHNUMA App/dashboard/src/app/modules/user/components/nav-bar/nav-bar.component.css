@@ -1,0 +1,53 @@
+.marketing .col-lg-3  {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.marketing .col-lg-3 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.col-lg-5{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.col-lg-7{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.featurette-image{
+    height:300px;
+    width: 300px;
+}
+.navbar{
+    background-color: #e15a97;
+}
+footer{
+    background-color: #e15a97;
+}
+header{
+    /* background-color: #eeabc4; */
+    /* background-image: url("../../../../../assets/img/banner-1563653_1920.jpg"); */
+    background: linear-gradient(0deg, rgba(238, 171, 196, 0.4), rgba(238, 171, 196, 1)), url("../../../../../assets/img/banner-1563653_1920.jpg");
+    background-size: cover;
+    height: 64%;
+}
+.btn{
+    background-color: #eeabc4;
+    border-color: #eeabc4;
+}
+.btn:hover{
+    background-color: #e15a97;
+    border-color: #e15a97;
+}
+.bg-light-section{
+    background-color: #F9ecf2;
+}

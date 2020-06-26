@@ -1,0 +1,45 @@
+.info{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.map-container{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}    
+.navbar{
+    background-color: #e15a97;
+}
+footer{
+    background-color: #e15a97;
+}
+header{
+    background-color: #eeabc4;
+}
+.btn{
+    background-color: #eeabc4;
+    border-color: #eeabc4;
+}
+.btn:hover{
+    background-color: #e15a97;
+    border-color: #e15a97;
+}
+.bg-light-section{
+    background-color: #F9ecf2;
+}
+header{
+    background: linear-gradient(0deg, rgba(238, 171, 196, 0.4), rgba(238, 171, 196, 1)), url("../../../../../assets/img/banner-1563653_1920.jpg");
+    background-size: cover;
+    height: 40%;
+}
+header h1, h2{
+    color: black;
+}

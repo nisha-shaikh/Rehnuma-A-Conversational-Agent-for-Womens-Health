@@ -1,0 +1,205 @@
+<!-- <div class="grid-container">
+  <h1 class="mat-h1">Dashboard</h1>
+  <mat-grid-list cols="3" rowHeight="350px">
+    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            {{card.title}}
+            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+              <mat-icon>more_vert</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" xPosition="before">
+              <button mat-menu-item>Expand</button>
+              <button mat-menu-item>Remove</button>
+            </mat-menu>
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <p>
+              Total number of visitors: {{visitor$}}
+            </p>
+            <p>
+              Flag Ratio: {{flagRatio$ | number: '2.2-2'}}%
+            </p></div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div> -->
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-2">
+      <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Visitors</h4>
+            <p class="card-category">Total number of visitors</p>
+        </div>
+        <div class="card-body">
+          {{visitor$}}
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+            <h4 class="card-title">Chats</h4>
+            <p class="card-category">Chats per day</p>
+        </div>
+        <div class="card-body">
+
+            <div #freqChart></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <!-- <div class="row">
+
+    <div class="col-md-2"></div>
+
+    <div class="col-md-4">
+      <div class="card card-stats">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">emoji_people</i>
+          </div>
+          <p class="card-category">Visitors</p>
+          <h3 class="card-title">{{visitor$}}
+            <small>people</small>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <p>Total visitors on the site</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card card-stats">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">flag</i>
+          </div>
+          <p class="card-category">Flag Ratio</p>
+          <h3 class="card-title">{{flagRatio$ | number: '2.2-2'}}
+            <small>percent</small>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <p>Ratio of chats flagged</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2"></div>
+
+  </div> -->
+
+
+  <div class="row">
+
+    <div class="col-md-9">
+      <div class="card">
+          <div class="card-header card-chart card-header-warning">
+              <h4 class="card-title">Chats</h4>
+          </div>
+          <div class="card-body">
+            <div #freqChart></div>
+          </div>
+          <div class="card-footer">
+              <div class="card-stats">
+                  <p> Number of chats per day</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-stats">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">emoji_people</i>
+          </div>
+          <p class="card-category">Visitors</p>
+          <h3 class="card-title">{{visitor$}}
+            <small>people</small>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <p>Total visitors on the site</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card card-stats">
+        <div class="card-header card-header-warning card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">flag</i>
+          </div>
+          <p class="card-category">Flag Ratio</p>
+          <h3 class="card-title">{{flagRatio$ | number: '2.2-2'}}
+            <small>percent</small>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+            <p>Ratio of chats flagged</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-9">
+      <div class="card">
+          <div class="card-header card-chart card-header-warning" style='overflow:auto;'>
+            <h4 class="card-title">Intents</h4>
+          </div>
+          <div class="card-body">
+            <div #intentChart></div>
+          </div>
+          <div class="card-footer">
+              <div class="card-stats">
+                <p> Frequency of intents triggered</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+<!-- <div #analytics> -->
+  <!-- <p *ngFor='let visitor of visitor$ | async'> -->
+  <!-- <h1 class="display-1">
+    Total number of visitors: {{visitor$}}
+  </h1> -->
+  <!-- <p *ngFor='let flagged of flagged$ | async'> -->
+  <!-- <h1 class="display-1">
+    Flag Ratio: {{flagRatio$ | number: '2.2-2'}}%
+  </h1> -->
+<!-- </div> -->
+<!-- <div #freqChart>
+
+</div> -->
+<!-- <div #intentChart>
+
+</div> -->
+<!-- <div *ngFor='let chat of chat$ | async'>
+  {{chat.StartTime.toDate() | date: 'dd MMM yyyy hh:mm a'}}
+</div> -->

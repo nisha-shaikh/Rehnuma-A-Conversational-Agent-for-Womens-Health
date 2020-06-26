@@ -1,0 +1,323 @@
+[
+  {
+    "text": "What is Areola",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "Areola",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Cesarean",
+    "entities": [
+      {
+        "start": 8,
+        "end": 16,
+        "value": "Cesarean",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Tell me about Amniotic fluid",
+    "entities": [
+      {
+        "start": 14,
+        "end": 28,
+        "value": "Amniotic fluid",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what is External cephalic version",
+    "entities": [
+      {
+        "start": 8,
+        "end": 33,
+        "value": "External cephalic version",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who is a Obstetric anesthetists",
+    "entities": [
+      {
+        "start": 9,
+        "end": 31,
+        "value": "Obstetric anesthetists",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Round ligament pain",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "Round ligament pain",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is Neural tube defect",
+    "entities": [
+      {
+        "start": 8,
+        "end": 26,
+        "value": "Neural tube defect",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is the meaning of anesthesia",
+    "entities": [
+      {
+        "start": 23,
+        "end": 33,
+        "value": "anesthesia",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What is High risk pregnancy",
+    "entities": [
+      {
+        "start": 8,
+        "end": 27,
+        "value": "High risk pregnancy",
+        "entity": "word"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Who will see me during hospital visits?",
+    "entities": [
+      {
+        "start": 23,
+        "end": 38,
+        "value": "hospital visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Attendant at hospital visits?",
+    "entities": [
+      {
+        "start": 13,
+        "end": 28,
+        "value": "hospital visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Is my partner allowed to come with me for antenatal visits?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "partner",
+        "entity": "attendee"
+      },
+      {
+        "start": 42,
+        "end": 58,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "start": 6,
+        "end": 13,
+        "value": "partner",
+        "entity": "attendee",
+        "confidence": 0.7781914960109108,
+        "extractor": "CRFEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Should someone accompany me for antenatal visits?",
+    "entities": [
+      {
+        "start": 32,
+        "end": 48,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Can my husband accompany?",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "husband",
+        "entity": "attendee"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will bringing a friend to the visits be fine?",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "friend",
+        "entity": "attendee"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Ideal number of visits when pregnant.",
+    "entities": [
+      {
+        "start": 16,
+        "end": 22,
+        "value": "visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "What should I know before visiting the hospital for the first time?",
+    "entities": [
+      {
+        "start": 26,
+        "end": 47,
+        "value": "hospital visits",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Antenatal care's advantage",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am too busy with work to attend antenatal clinic, so what should I do?",
+    "entities": [
+      {
+        "start": 34,
+        "end": 50,
+        "value": "antenatal clinic",
+        "entity": "care_from_where"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Will I be asked anything during my antenatal visits?",
+    "entities": [
+      {
+        "start": 35,
+        "end": 51,
+        "value": "antenatal appointments",
+        "entity": "visit_type"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "baby's size in eleventh week",
+    "entities": [
+      {
+        "start": 15,
+        "end": 28,
+        "value": "eleventh week",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How big would my baby in one and a half month?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 45,
+        "value": "one and a half month",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "How big would my baby in hundred and nineteen days?",
+    "entities": [
+      {
+        "start": 25,
+        "end": 50,
+        "value": "hundred and nineteen days",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I am 23 weeks pregnant. How grown is my baby?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 13,
+        "value": "23 weeks",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Two months pregnant. Tell me how grown my baby is.",
+    "entities": [
+      {
+        "start": 0,
+        "end": 10,
+        "value": "Two months",
+        "entity": "pregnancy_duration"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

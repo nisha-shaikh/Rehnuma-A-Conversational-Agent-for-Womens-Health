@@ -1,0 +1,50 @@
+{
+  "pregnancy_duration": {
+    "precision": 1.0,
+    "recall": 0.5789473684210527,
+    "f1-score": 0.7333333333333334,
+    "support": 19
+  },
+  "visit_type": {
+    "precision": 1.0,
+    "recall": 0.6451612903225806,
+    "f1-score": 0.7843137254901961,
+    "support": 31
+  },
+  "care_from_where": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2
+  },
+  "word": {
+    "precision": 1.0,
+    "recall": 0.47058823529411764,
+    "f1-score": 0.6399999999999999,
+    "support": 17
+  },
+  "attendee": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.5972222222222222,
+    "f1-score": 0.7478260869565216,
+    "support": 72
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.6722727121408835,
+    "f1-score": 0.7915294117647058,
+    "support": 72
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.5972222222222222,
+    "f1-score": 0.7434313725490196,
+    "support": 72
+  }
+}
