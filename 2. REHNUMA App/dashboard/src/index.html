@@ -1,6 +1,35 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+  <style>
+   .rw-conversation-container .rw-header{
+    background-color: #FF69B4 !important;
+    }
+
+    .rw-conversation-container .rw-client{
+           background-color: #FF69B4 !important; 
+    }
+
+    .rw-conversation-container .rw-reply{
+           border-color: #FF69B4 !important; 
+           color: #FF69B4 !important;
+    }
+
+    .rw-conversation-container .rw-send-icon-ready {
+          fill: #FF69B4 !important;
+    }
+
+    .conversation-container close-button {
+        background-color: #FF69B4 !important;
+    }
+
+    .rw-launcher{
+        background-color: #FF69B4 !important;
+    } 
+
+  
+  </style>
   <meta charset="utf-8">
   <title>Dashboard</title>
   <base href="/">
@@ -17,9 +46,9 @@
     <script>
       WebChat.default.init({
         selector: "#webchat",
-        initPayload: "",
+        initPayload: "/intro",
         customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
-        socketUrl: "http://localhost:5002",
+        socketUrl: "http://localhost:5005",
         socketPath: "/socket.io/",
         title: "Rehnuma",
         subtitle: "Your Guide to Motherhood",
