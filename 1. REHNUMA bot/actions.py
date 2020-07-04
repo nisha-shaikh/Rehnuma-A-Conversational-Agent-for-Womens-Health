@@ -5,7 +5,6 @@
 # https://rasa.com/docs/rasa/core/actions/#custom-actions/
 
 
-# This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
 
@@ -35,14 +34,13 @@ firebase= pyrebase.initialize_app(config)
 storage = firebase.storage()
 
 
-# storage.child("glossary.json").download("glossary.json")
 
 
 class ActionBabyGrowth(Action):
     def __init__(self):
-    	growth_data = storage.child("growth_data.json").get_url(None)
-    	self.data = pd.read_json(growth_data)
-    	self.name()
+    	# growth_data = storage.child("growth_data.json").get_url(None)
+    	# self.data = pd.read_json(growth_data)
+        self.data = pd.read_json("./data/growth_data.json")
     	
     def name(self) -> Text:
         return "action_baby_growth"
@@ -58,23 +56,21 @@ class ActionBabyGrowth(Action):
         else:
             mytext = "I see you are {} weeks pregnant. ".format(duration)
             mytext+=self.data[self.data.week==int(duration)].description.item()
+            mytext+= "\n" + "Copywrites for the following image belong to babycenter.com"
             myimage = storage.child('/baby_growth/week'+duration+'.jpg').get_url(None)
+            # myimage = "./data/images/"+duration+".jpg"
             
             dispatcher.utter_message(image = myimage,
                                      text = mytext)
             return [AllSlotsReset()]
 
 
-#Accessing glossary.json locally-saved in the same folder
-#with open("glossary.json", "r") as read_file:
-#            data = json.load(read_file)
-
 
 class ActionGetGlossary(Action):
     def __init__(self):
-    	glossary_data = storage.child("glossary.json").get_url(None)
-    	self.data = pd.read_json(glossary_data)
-    	self.name()
+    	# glossary_data = storage.child("glossary.json").get_url(None)
+    	# self.data = pd.read_json(glossary_data)
+        self.data = pd.read_json("./data/glossary.json")
     	
     def name(self) -> Text:
         return "action_get_glossary"
@@ -93,7 +89,6 @@ class ActionGetGlossary(Action):
             meaning=meaning.to_string(index=False)     
         
 
-        #print ("type", type(meaning))
         
         dispatcher.utter_message(text = meaning)
         
@@ -101,4 +96,57 @@ class ActionGetGlossary(Action):
         print("meaning",meaning)
 
         return [SlotSet('word', None)]
-        #return []
+
+class ActionDefaultAskAffirmation(Action):
+   """Asks for an affirmation of the intent if NLU threshold is not met."""
+
+   def __init__(self):
+       self.intent_mappings = pd.read_csv('./data/intent_mappings.csv')    
+
+   def name(self):
+       return "action_default_ask_affirmation"
+
+
+   def run(self, dispatcher, tracker, domain):
+       # get the most likely intent
+       last_intent_name = tracker.latest_message['intent']['name']
+       print(last_intent_name)
+
+       # get the prompt for the intent
+       intent_prompt = self.intent_mappings[self.intent_mappings.intent_name==last_intent_name]['mapping'].item()
+       print(intent_prompt)
+
+       message = intent_prompt
+       buttons = [{'title': 'Yes',
+                   'payload': '/{}'.format(last_intent_name)},
+                  {'title': 'No',
+                   'payload': '/out_of_scope'}]
+       dispatcher.utter_message(text = message, buttons=buttons)
+
+       return []
+
+class ActionFeedback(Action):
+   """Asks for feedback from the user"""   
+
+   def name(self):
+       return "action_feedback"
+
+
+   def run(self, dispatcher, tracker, domain):
+
+       message = "On a scale of 1-5, how satisfied are you with our bot's conversation?"
+       payload = '/feedback_done'
+       buttons = [{'title': '1',
+                   'payload': payload},
+                  {'title': '2',
+                   'payload': payload},
+                   {'title': '3',
+                   'payload': payload},
+                   {'title': '4',
+                   'payload': payload},
+                   {'title': '5',
+                   'payload': payload}]
+
+       dispatcher.utter_button_message(message, buttons=buttons)
+
+       return []

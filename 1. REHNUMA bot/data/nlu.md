@@ -161,6 +161,7 @@ data/duration.txt
 - I am feeling very good
 - I am great
 - I'm good
+- I am fine
 
 ## intent:mood_unhappy
 - sad
@@ -809,6 +810,22 @@ data/duration.txt
 - How do I know if my contractions are not practice contractions?
 - Practice contractions
 - Can my midwife help me figure out if contractions are fake?
+
+##intent: feedback_done
+
+##intent: intro
+- What is Rehnuma?
+- Who is Rehnuma?
+- what is your purpose?
+- what do you do?
+- Rehnuma
+- Rahnuma
+- the bot
+- Your job.
+- Tell me something about yourself
+- Introduce yourself
+- give me your intro. 
+
 
 ##synonym:2
 - 2 weeks

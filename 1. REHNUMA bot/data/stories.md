@@ -12,6 +12,10 @@
 
 	## GENERAL CONVERSATIONS
 
+## introduction
+* intro
+  - utter_intro
+
 ## happy path
 * greet
   - utter_greet
@@ -36,25 +40,26 @@
 * deny
   - utter_goodbye
 
-## say goodbye only
+<!-- ## say goodbye only
 * goodbye
   - utter_goodbye
-
+ -->
 ## bot challenge
 * bot_challenge
   - utter_iamabot
 
 ## bye + ask for rating + yes
 * goodbye
-	- utter_performance
-* affirm	
-	- utter_glad_bye
+	- utter_ask_feedback
+* affirm
+	- action_feedback
 
-## bye + ask for rating + yes
+
+## bye + ask for rating + no
 * goodbye
-	- utter_performance
+	- utter_ask_feedback
 * deny	
-	- utter_sad_bye
+	- utter_goodbye
 	
 ## ask more
 * more
@@ -83,6 +88,14 @@
 	- utter_ok
 * deny
 	- utter_glad_bye
+
+	##BUTTON MAPPING
+
+## feedback done
+* feedback_done
+	- utter_feedback_done
+
+
 	
 	## ANTENATAL CARE
 
@@ -200,7 +213,7 @@
 * antenatal_visit_not_attend
 	-utter_antenatal_visit_not_attend
 * goodbye
-	-utter_goodbye
+	- utter_ask_feedback
 
 ## antenatal with what happens+ thanks + attendant 
 * greet
@@ -453,10 +466,6 @@
 * folic_acid_check_doc
 	- utter_folic_acid_check_doc
 		
-		## NUTRIENTS
-## story 1 - nutrients
-* important_nutrients
-	- action_important_nutrients
   
 		## IRON
 ## story 1
@@ -470,10 +479,6 @@
 ## story 3  
 * iron_supplements_side_effects
 	- utter_iron_supplements_side_effects
-
-## story 4  
-* iron_supplements_twins
-	- utter_iron_supplements_twins
 
 ## story 5  
 * iron_why_deficient

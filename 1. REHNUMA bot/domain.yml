@@ -1,17 +1,19 @@
 actions: 
-  # TOTAL: 75
-  # CUSTOM - 03
+  # TOTAL: 76
+  # CUSTOM - 04
   - action_baby_growth
   - action_get_glossary
-  - action_important_nutrients
-  # GENERAL - 06
+  - action_default_ask_affirmation
+  - action_feedback
+  # GENERAL - 07
+  - utter_intro
   - utter_greet
   - utter_cheer_up
   - utter_did_that_help
   - utter_happy
   - utter_goodbye
   - utter_iamabot
-  # FALLBACK
+  # FALLBACK - 02
   - utter_ask_rephrase
   - utter_default
   # FOR CONVERSATIONAL FLOW/ EMPATHY -10
@@ -20,11 +22,12 @@ actions:
   - utter_help_offer
   - utter_more
   - utter_performance
-  - utter_glad_bye
-  - utter_sad_bye
   - utter_dont_worry
   - utter_ok
   - utter_on_it
+  - utter_ask_feedback
+  - utter_feedback_done
+
   # ANTENATAL CARE - 08
   - utter_antenatal_visit_attendant_1
   - utter_antenatal_visit_attendant_2
@@ -74,17 +77,16 @@ actions:
   - utter_folic_acid_not
   - utter_folic_acid_start_time
   - utter_folic_acid_take_time
-  # IRON - 06
+  # IRON - 04
   - utter_iron_foods
   - utter_iron_increase_tips
   - utter_iron_supplements_side_effects
-  - utter_iron_supplements_twins
   - utter_iron_why_deficient
   # WARNING SIGNS - 03
   - utter_warning_signs
   - utter_warning_signs_anterior_placental
   - utter_warning_signs_howto_deal
-  # DELIVERY AND LABOR -13
+  # DELIVERY AND LABOR -11
   - utter_delivery
   - utter_signs_of_labor
   - utter_labor_expectation
@@ -124,11 +126,14 @@ entities:
   - word
   
 intents: 
-  # CUSTOM 
+  # TOTAL: 69
+  # CUSTOM - 02
+  - baby_growth 
   - glossary
-  #FALLBACK
-  - out_of_scope
-  # GENERAL
+  #FALLBACK - 01
+  - out_of_scope 
+  # FOR EMPATHY - 12
+  - intro
   - greet
   - goodbye
   - affirm
@@ -136,11 +141,11 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  # FOR EMPATHY
   - more 
   - thank
   - ok 
-  # ANTENATAL
+  - feedback_done
+  # ANTENATAL - 08
   - antenatal_visit_attendant
   - antenatal_visit_attendee
   - antenatal_visit_frequency
@@ -149,29 +154,28 @@ intents:
   - antenatal_visit_not_attend
   - antenatal_visit_what_happens
   - antenatal_visit_when_start
-  # BABY MOTIONS
+  # BABY MOTIONS - 05
   - baby_due_date
-  - baby_growth
   - baby_moves_feel
   - baby_moves_monitor
   - baby_moves_not
   - baby_moves_start
-  # PREGNANCY TESTS
+  # PREGNANCY TESTS - 06
   - blood_pregnancy_test
   - home_pregnancy_test_accuracy
   - home_pregnancy_test_how
   - pregnancy_confirm
   - pregnancy_test
   - pregnancy_test_internal_exam
-  # DIET
+  # DIET - 02
   - diet_what_to_eat
   - diet_why_change
-  # CALCIUM
+  # CALCIUM - 04
   - calcium_amount
   - calcium_foods
   - calcium_side_effects
   - calcium_supplements
-  # FOLATE
+  # FOLATE - 10
   - folate_benefits
   - folate_food_items
   - folate_how_to_increase
@@ -182,19 +186,16 @@ intents:
   - folic_acid_not
   - folic_acid_start_time
   - folic_acid_take_time
-  # NUTRIENTS
-  - important_nutrients
-  # IRON
+  # IRON - 04
   - iron_foods
   - iron_increase_tips
   - iron_supplements_side_effects
-  - iron_supplements_twins
   - iron_why_deficient
-  # WARNING SIGNS
+  # WARNING SIGNS - 03
   - warning_signs
   - warning_signs_anterior_placental
   - warning_signs_howto_deal
-  # DELIVERY AND LABOR
+  # DELIVERY AND LABOR - 12
   - delivery
   - signs_of_labor
   - labor_expectation
@@ -207,12 +208,15 @@ intents:
   - labor_feels
   - active_labor
   - contractions
+
    
   
   
 responses:
   
         #GENERAL
+  utter_intro:
+    - text: "I am Rehnuma. An Artificial Intelligent(AI) powered assistant that converses about maternity. I am still too young to know everything so I can address only a few topics like Antenatal Care, Baby Growth or Motion, Delivery/Labor, Diet and Nutritient, Pregnancy Tests and Warning signs, but all my answers come from authentic and reliable sources, so fear not to ask me any of your queries."
   utter_cheer_up: 
     - 
       image: "https://i.imgur.com/nGF1K8f.jpg"
@@ -222,7 +226,7 @@ responses:
       text: "Did that help you?"
   utter_goodbye: 
     - 
-      text: Bye
+      text: Bye.
   utter_greet: 
     - 
       text: "Hey! How are you?"
@@ -374,6 +378,20 @@ responses:
     -
       text: "I am on it."
 
+  utter_ask_feedback:
+    -
+      text: "Would you like to provide your feedback on your conversation with Rehnuma?"
+      buttons:
+        - title: "Yes"
+          payload: "/affirm"
+        - title: "No"
+          payload: "/deny"
+
+  utter_feedback_done:
+    -
+      text: "Thank you for your feedback. Bye."
+
+
   # DIET
   utter_diet_what_to_eat: 
     - 
@@ -424,9 +442,6 @@ responses:
   utter_iron_supplements_side_effects: 
     - 
       text: "Take iron supplements exactly as your doctor recommends. They may cause nausea, vomiting, constipation, or diarrhea. Sometimes your body adjusts to the extra iron on its own in a few days. Drinking plenty of water and eating foods high in fiber may also help with constipation. But if you still have side effects, try taking the supplements with food or in two doses. Or ask your doctor if it's safe to take a stool softener."
-  utter_iron_supplements_twins: 
-    - 
-      text: "Taking an iron supplement can help ensure you get enough iron every day. In most cases, you will get enough iron in your prenatal vitamin since many types contain the recommended amount of iron. Your doctor will check your iron levels periodically depending on your test results and if you are a vegetarian.) If your iron level is low, you may need to take an extra iron supplement."
   utter_iron_why_deficient: 
     - 
       text: "Getting enough iron from food when you're pregnant can be difficult, even if you're carefully trying to add iron to your diet. This is especially true if you're a vegetarian or vegan because you don't eat iron-rich meats or poultry. Be sure to tell your doctor if you are a vegetarian so he or she can watch your iron and hemoglobin levels more carefully."

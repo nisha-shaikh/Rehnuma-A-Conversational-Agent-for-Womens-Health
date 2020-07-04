@@ -1,0 +1,70 @@
+intent_name,mapping
+glossary,Are you asking me to define some word?
+out_of_scope,Are you asking a question that is out of context?
+greet,Are you trying to greet me?
+goodbye,Are you saying goodbye?
+affirm,"Do you mean ""Yes""?"
+deny,Are you denying?
+mood_great,Are you telling me your mood?
+mood_unhappy,Do you mean to say you are unhappy?
+bot_challenge,Are you challenging my intelligence?
+more,Are you saying you want to know more?
+thank,Are you thanking me?
+ok,Do you mean you are okay with what I asked earlier?
+antenatal_visit_attendant,Are you asking me who will attend to you during antenatal visits?
+antenatal_visit_attendee,Do you mean to ask who can accompany you during antenatal visits?
+antenatal_visit_frequency,Are you asking how frequently you should go for antenatal visits?
+antenatal_visit_info_first_time,Are you asking for some information regarding your first antenatal visit?
+antenatal_visit_necessary,Are you asking me why antenatal visits necessary?
+antenatal_visit_not_attend,Are you asking me what happens if you are unable to attend antenatal care?
+antenatal_visit_what_happens,Do you mean to ask what happens in antenatal care?
+antenatal_visit_when_start,Did you mean to ask the best time to start getting antenatal care?
+baby_due_date,Do you want to know what is your baby's due date?
+baby_growth,Are you trying to figure out your fetus size?
+baby_moves_feel,Are you trying to ask me how it feels when your baby moves?
+baby_moves_monitor,Are you asking me if you should monitor your baby's kicks?
+baby_moves_not,Are you asking me what you should if your baby is not moving?
+baby_moves_start,Are you asking me when would your baby start to move?
+blood_pregnancy_test,Are you inquiring about blood pregnancy test?
+home_pregnancy_test_accuracy,Do you mean to inquire about the accuracy of home pregnancy test?
+home_pregnancy_test_how,Are you asking me how you can carry out a home pregnancy test?
+pregnancy_confirm,Are you asking me to tell you if you are pregnant?
+pregnancy_test,Are you asking me about pregnancy tests?
+pregnancy_test_internal_exam,Do you mean to ask me about internal examination pregnancy test?
+diet_what_to_eat,Are you asking me what you should eat during pregnancy?
+diet_why_change,Did you mean to ask why you should change your diet during pregnancy?
+calcium_amount,Are you inquiring about the calcium amount a pregnant women should intake?
+calcium_foods,Are you asking me to list foods that contain calcium?
+calcium_side_effects,Are you asking me about calcium's sideffects?
+calcium_supplements,Are you asking me about calcium supplements?
+folate_benefits,Are you asking me about the benefits of folate?
+folate_food_items,Are you asking me to list foods that contain folate?
+folate_how_to_increase,Are you asking me how you can increase your folate content?
+folate_when_more,Are you asking me when you would need to take more folate?
+folic_acid_check_doc,Are you asking me if you should check with your doctor regarding your prenatal vitamin?
+folic_acid_dose,Are you asking me about the correct folic acid dose?
+folic_acid_food,Are you asking me what food contains folic acid?
+folic_acid_not,Are you asking me if you need folic acid?
+folic_acid_start_time,Are you asking me when you should start taking folic acid?
+folic_acid_take_time,Are you asking me at what times you should take folic acid?
+iron_foods,Did you mean to ask what foods are iron-rich?
+iron_increase_tips,Did you mean to ask how you can increase your iron level?
+iron_supplements_side_effects,Did you mean to ask me about the sideeffects of iron supplements?
+iron_why_deficient,Did you mean to ask what you should do if you are not getting enough iron?
+warning_signs,Did you mean to ask about some warning signs in pregnancy?
+warning_signs_anterior_placental,Did you mean to ask what danger signs are associated with anterior placental?
+warning_signs_howto_deal,Did you mean to ask what you should do when you encounter any danger signs?
+delivery,Did you mean to ask me about baby's delivery?
+signs_of_labor,Did you mean to ask me what are some signs of labor?
+labor_expectation,Are you inquiring about what you should expect for labor?
+labor_pain_drug_free,Are you inquiring about drug free approaches of handling labor pain?
+labor_pain_medication,Are you inquiring about labor pain medication
+premature_labor_symptoms,Are you inquiring about premature labor symptoms?
+premature_labor_risk,Are you inquiring about premature labor risks?
+premature_labor,Are you asking me what you should do if you have an early labor?
+castor_oil_labor,Are you inquiring about castor oil labor?
+labor_feels,Are you inquiring about how labor feels like?
+active_labor,Are you inquiring about active labor?
+contractions,Are you inquiring about contractions?
+feedback_done,Did you mean you are done with any feedback for Rehnuma?
+intro,Are you asking me to introduce myself?

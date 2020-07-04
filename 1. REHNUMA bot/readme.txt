@@ -7,7 +7,7 @@ run this command:
 rasa train
 rasa shell
 rasa run actions(on another cmd)
-rasa run -m models --enable-api --cors "*" --debug -p 5002
+rasa run -m models --endpoints endpoint.yml --cors "*" --debug
 to convert nlu.json to nlu.md:
 rasa data convert nlu --data ./data/nlu.json --out ./data/nlu.md --format md
 
