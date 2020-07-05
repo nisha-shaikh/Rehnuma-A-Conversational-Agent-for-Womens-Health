@@ -14,7 +14,7 @@ Dhanani School of Science and Engineering,
 Habib University
 
 
-### Required Packagaes
+### Required Packages
 
 Following python libraries are required to setup the RASA framework used by model and action server in the sub-directory 1. Rehnuma Bot:
 
