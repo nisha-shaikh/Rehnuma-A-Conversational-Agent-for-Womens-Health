@@ -31,7 +31,7 @@ To setup the web application have installed Angular and Node.js on your system.
 ##### Model 
 Open command prompt in the 1. Rehnuma Bot  directory and run the following command:
 
-    rasa run -m models --endpoints endpoint.yml --cors "*" --debug
+    rasa run -m models --endpoints endpoints.yml --cors "*" --debug
 
 ##### Action 
 Open command prompt in the 1. Rehnuma Bot  directory and run the following command:
