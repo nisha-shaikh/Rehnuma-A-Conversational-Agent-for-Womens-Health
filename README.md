@@ -44,7 +44,7 @@ If you want to train the bot, run the following command in the same directory:
     rasa train
 
 ### Running Angular Web Application
-Open command prompt in the 2. Rehnuma App directory and run the following commands:
+Open command prompt in the dashboard folder in the 2. Rehnuma App directory and run the following commands:
 
     npm install
     npm start
