@@ -22,13 +22,13 @@ from rasa.core.trackers import ActionExecuted, DialogueStateTracker, EventVerbos
 from rasa.utils.common import class_from_module_path, raise_warning, arguments_of
 from rasa.utils.endpoints import EndpointConfig
 from rasa.core.tracker_store import TrackerStore
+from rasa.core.channels.socketio import SocketIOInput
 
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import firestore
 
 logger = logging.getLogger(__name__)
-
 
 class MyTrackerStore(TrackerStore):
     """
@@ -55,6 +55,9 @@ class MyTrackerStore(TrackerStore):
 
         self.chat = self.db.collection('test-chat')
         self.messages = self.db.collection('test-message')
+
+        self.button_click = False
+        self.button_appear = False
 
         # self._ensure_indices()
 
@@ -119,6 +122,7 @@ class MyTrackerStore(TrackerStore):
 
             response = {'ResponseName': None, 'ResponseText': None}
             time = None
+            bye = False
 
             for e in events:
                 if e['event'] == 'session_started':
@@ -136,11 +140,23 @@ class MyTrackerStore(TrackerStore):
                     response['ResponseName'] = e['name']
                 if e['event'] == 'bot':
                     response['ResponseText'] = e['text']
+                    if e['data']['buttons'] is not None:
+                        self.button_appear = True
+                if e['event'] == 'user' and (e['parse_data']['intent'] == 'goodbye' or e['parse_data']['intent'] == 'feedback_done'):
+                    bye = True
+                    time = datetime.fromtimestamp(e['timestamp'])
+                    self.chat.document(visitor_number).set({
+                        'EndTime': time,
+                        'isActive': False
+                        },
+                        merge=True
+                    )
 
             if events:
+                logger.debug(events)
                 # only add data to database when user sends a message
                 new_message = self.messages.document().id          # ID of new text in thread
-                if current_state['latest_message']['text'] is not None:
+                if not self.button_click:
                     # if reply is not from button
                     self.messages.document(new_message).set({
                         'chatID': visitor_number,
@@ -150,8 +166,11 @@ class MyTrackerStore(TrackerStore):
                         'Response': response,
                         'Flagged': False
                     })
+                    if self.button_appear:
+                        self.button_click = True
+                        self.button_appear = False
                 else:
-                    logger.debug(events)
+                    self.button_click = False
                     e = [e for e in events if e['event'] == 'user']
                     if e[0]['text'] == '/out_of_scope':
                         # if user chose the No button for default_ask_affirmation
@@ -169,8 +188,6 @@ class MyTrackerStore(TrackerStore):
                             merge=True
                         )
                     elif e[0]['text'] == '/affirm':
-                        logger.debug(events)
-                        logger.debug(current_state)
                         # if user chose the Yes button for feedback
                         self.messages.document(new_message).set({
                             'chatID': visitor_number,
