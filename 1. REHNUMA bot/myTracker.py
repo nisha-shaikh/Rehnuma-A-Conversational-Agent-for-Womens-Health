@@ -169,6 +169,8 @@ class MyTrackerStore(TrackerStore):
                             merge=True
                         )
                     elif e[0]['text'] == '/affirm':
+                        logger.debug(events)
+                        logger.debug(current_state)
                         # if user chose the Yes button for feedback
                         self.messages.document(new_message).set({
                             'chatID': visitor_number,
