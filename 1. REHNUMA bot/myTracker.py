@@ -126,7 +126,9 @@ class MyTrackerStore(TrackerStore):
                     if 'StartTime' not in chat_doc:
                         # add StartTime of only 1st message
                         self.chat.document(visitor_number).set(
-                            {'StartTime': time},
+                            {'StartTime': time,
+                            'isActive': True,
+                            'Flagged': False},
                             merge=True
                         )
                 if 'confidence' in e and e['confidence'] == 1 and e['name'] != 'action_listen':
@@ -138,22 +140,74 @@ class MyTrackerStore(TrackerStore):
             if events:
                 # only add data to database when user sends a message
                 new_message = self.messages.document().id          # ID of new text in thread
-                self.messages.document(new_message).set({
-                    'chatID': visitor_number,
-                    'Time': time,
-                    'MessageText': current_state['latest_message']['text'],
-                    'Intent': current_state['latest_message']['intent']['name'],
-                    'Response': response
-                })
+                if current_state['latest_message']['text'] is not None:
+                    # if reply is not from button
+                    self.messages.document(new_message).set({
+                        'chatID': visitor_number,
+                        'Time': time,
+                        'MessageText': current_state['latest_message']['text'],
+                        'Intent': current_state['latest_message']['intent']['name'],
+                        'Response': response,
+                        'Flagged': False
+                    })
+                else:
+                    logger.debug(events)
+                    e = [e for e in events if e['event'] == 'user']
+                    if e[0]['text'] == '/out_of_scope':
+                        # if user chose the No button for default_ask_affirmation
+                        self.messages.document(new_message).set({
+                            'chatID': visitor_number,
+                            'Time': time,
+                            'MessageText': 'No',
+                            'Intent': e[0]['parse_data']['intent']['name'],
+                            'Response': response,
+                            'Flagged': True
+                        })
+                        self.chat.document(visitor_number).set({
+                            'Flagged': True
+                            },
+                            merge=True
+                        )
+                    elif e[0]['text'] == '/affirm':
+                        # if user chose the Yes button for feedback
+                        self.messages.document(new_message).set({
+                            'chatID': visitor_number,
+                            'Time': time,
+                            'MessageText': 'Yes',
+                            'Intent': e[0]['parse_data']['intent']['name'],
+                            'Response': response,
+                            'Flagged': False
+                        })
+                    elif e[0]['text'] == '/deny':
+                        # if user chose the No button for feedback
+                        self.messages.document(new_message).set({
+                            'chatID': visitor_number,
+                            'Time': time,
+                            'MessageText': 'No',
+                            'Intent': e[0]['parse_data']['intent']['name'],
+                            'Response': response,
+                            'Flagged': False
+                        })
+                    else:
+                        # if user chose the Yes button for default_ask_affirmation
+                        self.messages.document(new_message).set({
+                            'chatID': visitor_number,
+                            'Time': time,
+                            'MessageText': 'Yes',
+                            'Intent': e[0]['parse_data']['intent']['name'],
+                            'Response': response,
+                            'Flagged': False
+                        })
 
                 # self.conversations.document(doc_id).set({
                 #     "events": firestore.firestore.ArrayUnion(events)},
                 #     merge=True
                 # )
 
-        except Exception as e:
-            logger.debug('in save')
-            logger.error(e)
+        except Exception as err:
+            logger.debug('in save new error 1')
+            logger.error(err)
+            logger.debug(current_state)
 
     def _additional_events(self, tracker: DialogueStateTracker) -> Iterator:
         """Return events from the tracker which aren't currently stored.
